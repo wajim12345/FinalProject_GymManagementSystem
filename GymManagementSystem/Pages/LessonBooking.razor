@@ -1,0 +1,43 @@
+﻿@page "/lessonbooking"
+@using GymManagementSystem.Backend
+@using GymManagementSystem.Backend.Entities
+@using System.Text.Json
+@using System.IO
+
+<div class="page">
+	<h1>Book Lesson</h1>
+	<div class="section">
+		<div class="input">
+			<label>Lesson</label>
+			<select style="width:100%" @bind="lessonCode">
+				<option value="0">Select a Lesson</option>
+				@foreach (Lesson lesson in lessonManager.Lessons)
+				{
+					<option value="@lesson.Code">@lesson.Name</option>
+				}
+			</select>
+		</div>
+		<div>
+			<button class="findSchedule" @onclick="FindSchedules">Find Schedule</button>
+		</div>
+	</div>
+</div>
+
+
+@code {
+	private int lessonCode;
+	private List<Schedule> scheduleSearch = new();
+	private LessonManager lessonManager = new LessonManager();
+	private ScheduleManager scheduleManager = new ScheduleManager();
+
+	public void FindSchedules()
+	{
+		foreach (Schedule schedule in scheduleManager.Schedules)
+		{
+			if (schedule.Lesson.Code == lessonCode)
+			{
+				scheduleSearch.Add(schedule);
+			}
+		}
+	}
+}
