@@ -22,20 +22,71 @@
 		</div>
 	</div>
 </div>
+<div class="tableSection">
+<h1>Result</h1>
+<h2>@foreach(Lesson lesson in lessonManager.Lessons)
+		{
+			if(lesson.Code == lessonCode)
+			{
+				 <h2> @lesson.Description </h2>
+			}
+		}
+	</h2>
 
+<table class="displayTable">
+	<thead>
+		<tr>
+			<th>Select</th>
+			<th>Start Time</th>
+			<th>Duration</th>
+			<th>Location</th>
+			<th>Max Capacity</th>
+			<th>Capacity Left</th>
+		</tr>
+	</thead>
+	<tbody>
+			@if (scheduleSearch.Count > 0)
+			{
+				@foreach (Schedule schedule in scheduleSearch)
+				{
+						<tr>
+							<td>
+								<input type="radio" name="selectedSchedule"/>
+							</td>
+							<td>@schedule.Time</td>
+							<td>@schedule.Duration</td>
+							<td>@schedule.Location</td>
+							<td>@schedule.Capacity</td>
+							<td>@bookingManager.AvailableCapacity(schedule)</td>
+						</tr>
+				}
+			}
+			else
+			{
+				<tr>
+					<td></td>
+					<td>No schedule found</td>
+				</tr>
+			}
 
+	</tbody>
+</table>
+</div>
 @code {
 	private int lessonCode;
 	private List<Schedule> scheduleSearch = new();
 	private LessonManager lessonManager = new LessonManager();
 	private ScheduleManager scheduleManager = new ScheduleManager();
+	private BookingManager bookingManager = new BookingManager();
 
 	public void FindSchedules()
 	{
+		scheduleSearch.Clear();
 		foreach (Schedule schedule in scheduleManager.Schedules)
 		{
-			if (schedule.Lesson.Code == lessonCode)
+			if (schedule.Code == lessonCode)
 			{
+
 				scheduleSearch.Add(schedule);
 			}
 		}
