@@ -27,5 +27,12 @@ namespace GymManagementSystem.Backend.Entities
 			Duration = duration;
 			Capacity = capacity;
 		}
+
+		public string EndTime()
+		{
+			DateTime time = DateTime.Parse(Time);
+			DateTime newTime = time .AddMinutes(Duration);
+			return newTime.ToString("hh:mm");
+		}
 	}
 }

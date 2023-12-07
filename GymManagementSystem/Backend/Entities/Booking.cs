@@ -10,14 +10,16 @@ namespace GymManagementSystem.Backend.Entities
 	{
 		public Schedule Schedule { get; set; }
 		public string MemberID { get; set; }
+		public string MemberName { get; set; }
 
 		public Booking()
 		{
 
 		}
-		public Booking(Schedule schedule, string memberID)
+		public Booking(Schedule schedule,string memberName, string memberID)
 		{
 			Schedule = schedule;
+			MemberName = memberName;
 			MemberID = memberID;
 		}
 	}

@@ -51,5 +51,13 @@ namespace GymManagementSystem.Backend
 			int remainingCap = schedule.Capacity - capBooked;
 			return remainingCap;
 		}
+
+		public Booking BookLesson(Schedule schedule, string name, string id)
+		{
+			Booking booking = new Booking(schedule, name, id);
+			_bookings.Add(booking);
+			SaveBooking();
+			return booking;
+		}
 	}
 }

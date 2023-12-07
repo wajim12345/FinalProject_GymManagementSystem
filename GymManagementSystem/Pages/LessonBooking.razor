@@ -16,6 +16,15 @@
 					<option value="@lesson.Code">@lesson.Name</option>
 				}
 			</select>
+			<div>
+				@foreach (Lesson lesson in lessonManager.Lessons)
+				{
+					if (lesson.Code == lessonCode)
+					{
+						<h2>Lesson Description: @lesson.Description </h2>
+					}
+				}
+			</div>
 		</div>
 		<div>
 			<button class="findSchedule" @onclick="FindSchedules">Find Schedule</button>
@@ -24,14 +33,7 @@
 </div>
 <div class="tableSection">
 <h1>Result</h1>
-<h2>@foreach(Lesson lesson in lessonManager.Lessons)
-		{
-			if(lesson.Code == lessonCode)
-			{
-				 <h2> @lesson.Description </h2>
-			}
-		}
-	</h2>
+
 
 <table class="displayTable">
 	<thead>
@@ -51,7 +53,7 @@
 				{
 						<tr>
 							<td>
-								<input type="radio" name="selectedSchedule"/>
+								<input type="radio" name="selectedSchedule" @onclick="()=>SelectSchedule(schedule)"/>
 							</td>
 							<td>@schedule.Time</td>
 							<td>@schedule.Duration</td>
@@ -71,6 +73,42 @@
 
 	</tbody>
 </table>
+
+<div class="bookingSection">
+	<h1>Booking</h1>
+		<div class="bookingInfo">
+			<label>Lesson Code:</label>
+			<input type="text" @bind="selectedScheduleCode" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Location:</label>
+			<input type="text" @bind="selectedLocation" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Start Time:</label>
+			<input type="text" @bind="selectedTime" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>End Time:</label>
+			<input type="text" @bind="selectedEndTime" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Lesson Duration:</label>
+			<input type="text" @bind="selectedDuration" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Member Name:</label>
+			<input type="text" @bind="memberName" />
+		</div>
+		<div class="bookingInfo">
+			<label>Member ID:</label>
+			<input type="text" @bind="memberID" />
+		</div>
+</div>
+	<div style="text-align: center;">
+		<button class="reserveButton" @onclick="ConfirmBooking">Confirm</button>
+	</div>
+	<p style="text-align: center"> @message</p>
 </div>
 @code {
 	private int lessonCode;
@@ -78,6 +116,15 @@
 	private LessonManager lessonManager = new LessonManager();
 	private ScheduleManager scheduleManager = new ScheduleManager();
 	private BookingManager bookingManager = new BookingManager();
+	private int selectedScheduleCode;
+	private Schedule selectedSchedule;
+	private string selectedTime;
+	private string selectedLocation;
+	private int selectedDuration;
+	private string selectedEndTime;
+	private string memberName;
+	private string memberID;
+	private string message;
 
 	public void FindSchedules()
 	{
@@ -90,5 +137,37 @@
 				scheduleSearch.Add(schedule);
 			}
 		}
+	}
+
+	private void SelectSchedule(Schedule schedule)
+	{
+		selectedSchedule = schedule;
+		selectedScheduleCode = schedule.Code;
+		selectedLocation = schedule.Location;
+		selectedDuration = schedule.Duration;
+		selectedTime = schedule.Time;
+		selectedEndTime = schedule.EndTime();
+	}
+
+	public void ConfirmBooking()
+	{
+		if (bookingManager.AvailableCapacity(selectedSchedule) > 0)
+		{
+			if (!string.IsNullOrEmpty(memberName) && !string.IsNullOrEmpty(memberID))
+			{
+				//write condition to validate name and id
+				Booking newBooking = bookingManager.BookLesson(selectedSchedule, memberName, memberID);
+				message = "Successfully Booked!";
+			}
+			else
+			{
+				message = "Please Enter Name and ID";
+			}
+		}
+		else
+		{
+			message = "Lesson is full";
+		}
+
 	}
 }
