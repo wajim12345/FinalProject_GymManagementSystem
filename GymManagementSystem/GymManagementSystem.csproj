@@ -50,12 +50,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="BackEnd\Data\lesson.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="BackEnd\Data\schedule.csv">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      <PackageReference Include="MySqlConnector" Version="2.3.1" />
     </ItemGroup>
 
 </Project>

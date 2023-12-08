@@ -8,6 +8,7 @@ namespace GymManagementSystem.Backend.Entities
 {
 	internal class Schedule
 	{
+		public int Id { get; set; }
 		public int Code { get; set; }
 		public string Time {  get; set; }
 		public string Location { get; set; }

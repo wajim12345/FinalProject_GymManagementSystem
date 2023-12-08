@@ -124,9 +124,6 @@
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.DiagnosticSource.dll">
-      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.FileVersionInfo.dll">
       <PackagePath>System.Diagnostics.FileVersionInfo.dll</PackagePath>
     </AppxPackagedFile>
@@ -793,7 +790,7 @@
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.logging\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Logging.dll">
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.1\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.1\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.options\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Options.dll">
@@ -846,6 +843,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.windowsappsdk\1.1.5\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\mysqlconnector\2.3.1\lib\net6.0\MySqlConnector.dll">
+      <PackagePath>MySqlConnector.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\system.diagnostics.diagnosticsource\7.0.2\lib\net6.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\system.io.pipelines\6.0.3\lib\net6.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>

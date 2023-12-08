@@ -29,21 +29,21 @@
     <AppXManifest Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-07T15:45:20.516</Modified>
+      <Modified>2023-12-08T19:21:28.515</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-07T15:45:20.268</Modified>
+      <Modified>2023-12-08T19:13:27.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.runtimeconfig.json">
       <PackagePath>GymManagementSystem.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-07T01:55:01.785</Modified>
+      <Modified>2023-12-08T18:17:52.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
       <PackagePath>GymManagementSystem.dll</PackagePath>
-      <Modified>2023-12-07T15:45:19.553</Modified>
+      <Modified>2023-12-08T19:20:18.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\BackEnd\Data\lesson.csv">
       <PackagePath>BackEnd\Data\lesson.csv</PackagePath>
@@ -55,11 +55,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GymManagementSystem.exe</PackagePath>
-      <Modified>2023-12-07T15:45:19.568</Modified>
+      <Modified>2023-12-08T19:20:18.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.deps.json">
       <PackagePath>GymManagementSystem.deps.json</PackagePath>
-      <Modified>2023-12-07T02:04:16.300</Modified>
+      <Modified>2023-12-08T18:17:52.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -164,10 +164,6 @@
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
       <Modified>2023-10-18T22:15:20.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.DiagnosticSource.dll">
-      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
-      <Modified>2023-10-18T22:45:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\System.Diagnostics.FileVersionInfo.dll">
       <PackagePath>System.Diagnostics.FileVersionInfo.dll</PackagePath>
@@ -1057,9 +1053,9 @@
       <PackagePath>Microsoft.Extensions.Logging.dll</PackagePath>
       <Modified>2021-10-22T23:50:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.1\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.1\lib\net6.0\Microsoft.Extensions.Logging.Abstractions.dll">
       <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
-      <Modified>2022-02-24T00:12:48.000</Modified>
+      <Modified>2023-05-24T14:40:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.extensions.options\6.0.0\lib\netstandard2.1\Microsoft.Extensions.Options.dll">
       <PackagePath>Microsoft.Extensions.Options.dll</PackagePath>
@@ -1128,6 +1124,14 @@
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.windowsappsdk\1.1.5\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-09-07T21:54:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\mysqlconnector\2.3.1\lib\net6.0\MySqlConnector.dll">
+      <PackagePath>MySqlConnector.dll</PackagePath>
+      <Modified>2023-11-17T00:57:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\system.diagnostics.diagnosticsource\7.0.2\lib\net6.0\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
+      <Modified>2023-02-16T00:53:48.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\system.io.pipelines\6.0.3\lib\net6.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>

@@ -118,6 +118,7 @@
 	private BookingManager bookingManager = new BookingManager();
 	private int selectedScheduleCode;
 	private Schedule selectedSchedule;
+	private int selectedScheduleID;
 	private string selectedTime;
 	private string selectedLocation;
 	private int selectedDuration;
@@ -142,6 +143,7 @@
 	private void SelectSchedule(Schedule schedule)
 	{
 		selectedSchedule = schedule;
+		selectedScheduleID = schedule.Id;
 		selectedScheduleCode = schedule.Code;
 		selectedLocation = schedule.Location;
 		selectedDuration = schedule.Duration;
@@ -156,7 +158,7 @@
 			if (!string.IsNullOrEmpty(memberName) && !string.IsNullOrEmpty(memberID))
 			{
 				//write condition to validate name and id
-				Booking newBooking = bookingManager.BookLesson(selectedSchedule, memberName, memberID);
+				bookingManager.BookLesson(selectedScheduleID, memberID, memberName);
 				message = "Successfully Booked!";
 			}
 			else

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
@@ -11,14 +12,39 @@ namespace GymManagementSystem.Backend
 	{
 		protected List<Lesson> _lessons = new List<Lesson>();
 		public IList<Lesson> Lessons { get {  return _lessons; } }
-
-		const string LESSONS_FILE = "BackEnd/Data/lesson.csv";
-
 		public LessonManager()
 		{
-			LoadLessons();
+			LoadFromDatabase();
+			//LoadLessons();
 		}
-		public void LoadLessons()
+
+		public void LoadFromDatabase()
+		{
+			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
+			{
+				Server = "localhost",
+				UserID = "root",
+				Password = "password",
+				Database = "GymData",
+			};
+			MySqlConnection connection = new MySqlConnection(builder.ConnectionString);
+			connection.Open();
+			MySqlCommand command = new MySqlCommand("Select * from lessons", connection);
+			MySqlDataReader reader = command.ExecuteReader();
+			while (reader.Read())
+			{
+				Lesson lesson = new Lesson
+				{
+					Code = Convert.ToInt32(reader["code"]),
+					Name = Convert.ToString(reader["name"]),
+					Description = Convert.ToString(reader["description"]),
+				};
+				_lessons.Add(lesson);
+			}
+
+			connection.Close();
+		}
+		/*public void LoadLessons()
 		{
 			string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, LESSONS_FILE);
 			string[] lines = File.ReadAllLines(filePath);
@@ -31,6 +57,6 @@ namespace GymManagementSystem.Backend
 				Lesson lesson = new Lesson(code, name, description);
 				_lessons.Add(lesson);
 			}
-		}
+		}*/
 	}
 }

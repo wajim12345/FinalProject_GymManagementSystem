@@ -8,7 +8,7 @@ namespace GymManagementSystem.Backend.Entities
 {
 	internal class Booking
 	{
-		public Schedule Schedule { get; set; }
+		public int ScheduleID { get; set; }
 		public string MemberID { get; set; }
 		public string MemberName { get; set; }
 
@@ -16,9 +16,9 @@ namespace GymManagementSystem.Backend.Entities
 		{
 
 		}
-		public Booking(Schedule schedule,string memberName, string memberID)
+		public Booking(int id, string memberID, string memberName)
 		{
-			Schedule = schedule;
+			ScheduleID = id;
 			MemberName = memberName;
 			MemberID = memberID;
 		}

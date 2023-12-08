@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GymManagementSystem.Backend.Entities;
+using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
@@ -15,10 +16,12 @@ namespace GymManagementSystem.Backend
 		
 		public ScheduleManager()
 		{
-			LoadSchedule();
+
+			LoadFromDatabase();
+			//LoadSchedule();
 		}
 
-		public void LoadSchedule()
+		/*public void LoadSchedule()
 		{
 			string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, SCHEDULE_FILE);
 			string[] lines = File.ReadAllLines(filePath);
@@ -33,6 +36,36 @@ namespace GymManagementSystem.Backend
 				Schedule schedule = new Schedule(code, time, location, duration, capacity);
 				_schedules.Add(schedule);
 			}
+		}*/
+
+		public void LoadFromDatabase()
+		{
+			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
+			{
+				Server = "localhost",
+				UserID = "root",
+				Password = "password",
+				Database = "GymData",
+			};
+			MySqlConnection connection = new MySqlConnection(builder.ConnectionString);
+			connection.Open();
+			MySqlCommand command = new MySqlCommand("Select * from schedules", connection);
+			MySqlDataReader reader = command.ExecuteReader();
+			while (reader.Read())
+			{
+				Schedule schedule = new Schedule
+				{
+					Id = Convert.ToInt32(reader["ScheduleID"]),
+					Code = Convert.ToInt32(reader["code"]),
+					Time = Convert.ToString(reader["Time"]),
+					Location = Convert.ToString(reader["Location"]),
+					Duration = Convert.ToInt32(reader["Duration"]),
+					Capacity = Convert.ToInt32(reader["Capacity"]),
+				};
+				_schedules.Add(schedule);
+			}
+
+			connection.Close();
 		}
 	}
 }

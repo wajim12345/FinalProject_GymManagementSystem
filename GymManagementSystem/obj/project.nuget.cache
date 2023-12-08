@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qZCDIZubhZ6q7WJsUNIFXfovdTx0cHGaxMTKpT7kxBluf03csthb5vLfOZqerEalyvTW5nWuaC3QudlxSyP0gw==",
+  "dgSpecHash": "hJ228sFOXmsnp0Qbz/gU0Ee5AHXwb7fu8zep+oI+hwgZjLzVSFQk6AEXAIy+1RmvIymeMVdx5F7uKfbv4SLeXA==",
   "success": true,
   "projectFilePath": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.3.1\\microsoft.graphics.win2d.1.0.3.1.nupkg.sha512",
@@ -37,7 +37,8 @@
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
-    "C:\\Users\\jimwa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\jimwa\\.nuget\\packages\\mysqlconnector\\2.3.1\\mysqlconnector.2.3.1.nupkg.sha512",
+    "C:\\Users\\jimwa\\.nuget\\packages\\system.diagnostics.diagnosticsource\\7.0.2\\system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\jimwa\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
