@@ -1,0 +1,136 @@
+﻿@page "/member"
+@using GymManagementSystem.Data;
+@using GymManagementSystem.Backend;
+
+
+ <style>
+    .flex {
+        display: flex;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+
+</style>
+
+
+<h3>Member Management</h3>
+<h5 class="title-text">Search for a member by ID</h5>
+<label for="inputID">Member ID: </label>
+<input class="inputID" placeholder="member ID" @bind="inputID" /><br>
+<button @onclick="Search">Search</button>
+
+@if (foundMember != null)
+{
+    <div>
+        <p>Member found:</p>
+        <p>Id: @foundMember.Id</p>
+        <p>Name: @foundMember.FirstName @foundMember.LastName</p>
+        <p>Phone Number: @foundMember.Phone</p>
+        <p>Gender: @foundMember.Gender</p>
+        <p>Email: @foundMember.EmailAddress</p>
+        <p>Address: @foundMember.Address</p>
+        <p>Date of Birth: @foundMember.Dob</p>
+    </div>
+}
+else
+{
+    <p>Member not found.</p>
+}
+
+<h5 class="title-text">Add a new member</h5>
+
+    <div class="container">
+        <label>First Name: </label>
+        <input class="input" placeholder="first name" @bind="newFName" /><br>
+    </div>
+    <div class="container">
+        <label>Last Name: </label>
+        <input class="input" placeholder="last name" @bind="newLName" /><br>
+    </div>
+
+    <div class="container">
+        <label>Phone Number: </label>
+        <input class="input" placeholder="000-000-0000" @bind="newPhone" /><br>
+    </div>
+
+    <div class="container">
+        <label>Gender: </label>
+        <select class="long_select" @bind="newGender">
+            <option disabled selected>--select--</option>
+            <option>female</option>
+            <option>male</option>
+            <option>non-binary</option>
+        </select><br>
+    </div>
+
+    <div class="container">
+        <label>Email: </label>
+        <input class="input" placeholder="email" @bind="newEmail" /><br>
+    </div>
+    <div class="container">
+        <label>Address: </label>
+        <input class="input" placeholder="address" @bind="newAddress" /><br>
+    </div>
+    <div class="container">
+        <label>Date of birth: </label>
+        <div class="flex">
+            <select id="year" name="year" @bind="year">
+                <option disabled selected>----</option>
+                @for (int year = 1930; year <= 2015; year++)
+                {
+                    <option value="@year">@year</option>
+                }
+            </select>
+            <select id="month" name="month" @bind="month">
+                <option disabled selected>--</option>
+                @for (int month = 01; month <= 12; month++)
+                {
+                    <option value="@month">@month</option>
+                }
+            </select>
+            <select id="day" name="day" @bind="day">
+                <option disabled selected>--</option>
+                @for (int day = 01; day <= 31; day++)
+                {
+                    <option value="@day">@day</option>
+                }
+            </select>
+        </div>
+    </div>
+
+<button @onclick="Add">Add</button>
+
+@code {
+    private int inputID;
+
+    private string newFName;
+    private string newLName;
+    private string newPhone;
+    private string newGender;
+    private string newEmail;
+    private string newAddress;
+    private int year;
+    private int month;
+    private int day;
+    private string newDob;
+    private MemberManager memberManager = new MemberManager();
+    private Member foundMember;
+
+    private void Add()
+    {
+        newDob = $"{year}-{month}-{day}";
+        int newMemberId = memberManager.GetMaxId() + 1;
+        Member newMember = memberManager.AddMember(newMemberId, newFName, newLName, newPhone, newGender, newEmail, newAddress, newDob);
+        memberManager.SaveToDatabase();
+    }
+
+    private void Search()
+    {
+        foundMember = memberManager.SearchMemberById(inputID);
+    }
+}
