@@ -9,51 +9,71 @@
 	<div class="section">
 		<div class="input">
 			<label>Lesson</label>
-			<select style="width:100%" @bind="lessonCode">
+			<select @bind="lessonCode">
 				<option value="0">Select a Lesson</option>
 				@foreach (Lesson lesson in lessonManager.Lessons)
 				{
 					<option value="@lesson.Code">@lesson.Name</option>
 				}
 			</select>
-			<div>
-				@foreach (Lesson lesson in lessonManager.Lessons)
-				{
-					if (lesson.Code == lessonCode)
-					{
-						<h2>Lesson Description: @lesson.Description </h2>
-					}
-				}
-			</div>
 		</div>
 		<div>
 			<button class="findSchedule" @onclick="FindSchedules">Find Schedule</button>
 		</div>
 	</div>
-</div>
-<div class="tableSection">
-<h1>Result</h1>
+	<div class="displayInfo">
+		<h2>Lesson Information</h2>
+		@if (lessonCode != 0)
+		{
+			<table>
+				<tbody>
+					@foreach (Lesson lesson in lessonManager.Lessons)
+					{
+						if (lesson.Code == lessonCode)
+						{
+							<tr>
+								<td class="head">Code</td>
+								<td class="info">@lesson.Code</td>
+							</tr>
+							<tr>
+								<td class="head">Name</td>
+								<td class="info">@lesson.Name</td>
+							</tr>
+							<tr>
+								<td class="head">Description</td>
+								<td class="info">@lesson.Description</td>
+							</tr>
+						}
+					}
+				</tbody>
+			</table>
+		}
+
+	</div>
+
+	<div class="tableSection">
+		<h1>Result</h1>
 
 
-<table class="displayTable">
-	<thead>
-		<tr>
-			<th>Select</th>
-			<th>Start Time</th>
-			<th>Duration</th>
-			<th>Location</th>
-			<th>Max Capacity</th>
-			<th>Capacity Left</th>
-		</tr>
-	</thead>
-	<tbody>
-			@if (scheduleSearch.Count > 0)
-			{
-				@foreach (Schedule schedule in scheduleSearch)
+		<table class="displayTable">
+			<thead>
+				<tr>
+					<th>Select</th>
+					<th>Start Time</th>
+					<th>Duration</th>
+					<th>Location</th>
+					<th>Max Capacity</th>
+					<th>Capacity Left</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if (scheduleSearch.Count > 0)
 				{
+					@foreach (Schedule schedule in scheduleSearch)
+					{
 						<tr>
 							<td>
-								<input type="radio" name="selectedSchedule" @onclick="()=>SelectSchedule(schedule)"/>
+								<input type="radio" name="selectedSchedule" @onclick="()=>SelectSchedule(schedule)" />
 							</td>
 							<td>@schedule.Time</td>
 							<td>@schedule.Duration</td>
@@ -61,61 +81,154 @@
 							<td>@schedule.Capacity</td>
 							<td>@bookingManager.AvailableCapacity(schedule)</td>
 						</tr>
+					}
 				}
-			}
-			else
-			{
-				<tr>
-					<td></td>
-					<td>No schedule found</td>
-				</tr>
-			}
+				else
+				{
+					<tr>
+						<td></td>
+						<td>No schedule found</td>
+					</tr>
+				}
 
-	</tbody>
-</table>
+			</tbody>
+		</table>
 
-<div class="bookingSection">
-	<h1>Booking</h1>
-		<div class="bookingInfo">
-			<label>Lesson Code:</label>
-			<input type="text" @bind="selectedScheduleCode" readonly="readonly" />
+		<div class="bookingSection">
+			<h1>Booking</h1>
+			<div class="bookingInfo">
+				<label>Lesson Code:</label>
+				<input type="text" @bind="selectedScheduleCode" readonly="readonly" />
+			</div>
+			<div class="bookingInfo">
+				<label>Location:</label>
+				<input type="text" @bind="selectedLocation" readonly="readonly" />
+			</div>
+			<div class="bookingInfo">
+				<label>Start Time:</label>
+				<input type="text" @bind="selectedTime" readonly="readonly" />
+			</div>
+			<div class="bookingInfo">
+				<label>End Time:</label>
+				<input type="text" @bind="selectedEndTime" readonly="readonly" />
+			</div>
+			<div class="bookingInfo">
+				<label>Lesson Duration:</label>
+				<input type="text" @bind="selectedDuration" readonly="readonly" />
+			</div>
+			<div class="bookingInfo">
+				<label>Member ID:</label>
+				<input type="text" @bind="memberID" />
+			</div>
+			<div class="bookingInfo">
+				<label>First Name:</label>
+				<input type="text" @bind="memberFirstName" />
+			</div>
+			<div class="bookingInfo">
+				<label>Last Name:</label>
+				<input type="text" @bind="memberLastName" />
+			</div>
+
 		</div>
-		<div class="bookingInfo">
-			<label>Location:</label>
-			<input type="text" @bind="selectedLocation" readonly="readonly" />
+		<div style="text-align: center;">
+			<button class="reserveButton" @onclick="ConfirmBooking">Confirm</button>
 		</div>
-		<div class="bookingInfo">
-			<label>Start Time:</label>
-			<input type="text" @bind="selectedTime" readonly="readonly" />
-		</div>
-		<div class="bookingInfo">
-			<label>End Time:</label>
-			<input type="text" @bind="selectedEndTime" readonly="readonly" />
-		</div>
-		<div class="bookingInfo">
-			<label>Lesson Duration:</label>
-			<input type="text" @bind="selectedDuration" readonly="readonly" />
-		</div>
-		<div class="bookingInfo">
-			<label>Member Name:</label>
-			<input type="text" @bind="memberName" />
-		</div>
-		<div class="bookingInfo">
-			<label>Member ID:</label>
-			<input type="text" @bind="memberID" />
-		</div>
-</div>
-	<div style="text-align: center;">
-		<button class="reserveButton" @onclick="ConfirmBooking">Confirm</button>
+		<p style="text-align: center"> @message</p>
 	</div>
-	<p style="text-align: center"> @message</p>
 </div>
+<style>
+	.page {
+		width: 1000px;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: larger;
+		font-weight: bold;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: larger;
+		font-weight: bold;
+	}
+
+	.displayInfo{
+		margin-top: 20px;
+	}
+	.displayInfo table {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.displayInfo td {
+			padding: 8px;
+			text-align: left;
+		}
+
+	.head {
+		background-color: lightgoldenrodyellow;
+		font-weight: bold;
+	}
+	.info{
+		background-color: lightyellow;
+	}
+	.section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.input {
+
+		margin-right: 15px;
+	}
+
+	.displayTable {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+		.displayTable th,
+		.displayTable td {
+			padding: 8px;
+			text-align: left;
+		}
+
+		.displayTable th {
+			background-color: #007bff;
+			color: white;
+		}
+
+		.displayTable tbody tr:nth-child(even) {
+			background-color: #FDEED1;
+		}
+
+	.bookingInfo {
+		width: 100%;
+	}
+
+		.bookingInfo label {
+			width: 15%;
+		}
+
+		.bookingInfo input {
+			width: 84%;
+		}
+</style>
+
+
+
+
+
 @code {
 	private int lessonCode;
 	private List<Schedule> scheduleSearch = new();
 	private LessonManager lessonManager = new LessonManager();
 	private ScheduleManager scheduleManager = new ScheduleManager();
 	private BookingManager bookingManager = new BookingManager();
+	private MemberManager memberManager = new MemberManager();
 	private int selectedScheduleCode;
 	private Schedule selectedSchedule;
 	private int selectedScheduleID;
@@ -123,7 +236,8 @@
 	private string selectedLocation;
 	private int selectedDuration;
 	private string selectedEndTime;
-	private string memberName;
+	private string memberFirstName;
+	private string memberLastName;
 	private string memberID;
 	private string message;
 
@@ -155,11 +269,22 @@
 	{
 		if (bookingManager.AvailableCapacity(selectedSchedule) > 0)
 		{
-			if (!string.IsNullOrEmpty(memberName) && !string.IsNullOrEmpty(memberID))
+			if (!string.IsNullOrEmpty(memberFirstName) && !string.IsNullOrEmpty(memberLastName) && !string.IsNullOrEmpty(memberID))
 			{
-				//write condition to validate name and id
-				bookingManager.BookLesson(selectedScheduleID, memberID, memberName);
-				message = "Successfully Booked!";
+				foreach (Member member in memberManager.Members)
+				{
+					if (member.Id == int.Parse(memberID) && member.FirstName == memberFirstName && member.LastName == member.LastName)
+					{
+						bookingManager.BookLesson(selectedScheduleID, memberID);
+						message = "Successfully Booked!";
+						bookingManager.SaveToDatabase();
+						break;
+					}
+					else
+					{
+						message = "Invalid Member Information";
+					}
+				}
 			}
 			else
 			{

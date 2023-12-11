@@ -29,13 +29,13 @@
     <AppXManifest Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-08T19:21:28.515</Modified>
+      <Modified>2023-12-11T20:12:57.038</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-08T19:13:27.755</Modified>
+      <Modified>2023-12-11T19:48:52.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.runtimeconfig.json">
       <PackagePath>GymManagementSystem.runtimeconfig.json</PackagePath>
@@ -43,23 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
       <PackagePath>GymManagementSystem.dll</PackagePath>
-      <Modified>2023-12-08T19:20:18.403</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\BackEnd\Data\lesson.csv">
-      <PackagePath>BackEnd\Data\lesson.csv</PackagePath>
-      <Modified>2023-12-07T02:05:08.497</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\BackEnd\Data\schedule.csv">
-      <PackagePath>BackEnd\Data\schedule.csv</PackagePath>
-      <Modified>2023-12-07T02:05:14.930</Modified>
+      <Modified>2023-12-11T20:12:56.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GymManagementSystem.exe</PackagePath>
-      <Modified>2023-12-08T19:20:18.408</Modified>
+      <Modified>2023-12-11T20:12:56.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.deps.json">
       <PackagePath>GymManagementSystem.deps.json</PackagePath>
-      <Modified>2023-12-08T18:17:52.094</Modified>
+      <Modified>2023-12-11T19:09:14.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

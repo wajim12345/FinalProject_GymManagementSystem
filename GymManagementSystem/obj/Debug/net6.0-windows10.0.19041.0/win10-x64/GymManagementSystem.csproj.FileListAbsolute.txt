@@ -386,6 +386,4 @@ G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-wi
 G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\BackEnd\Data\lesson.csv
-G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\BackEnd\Data\schedule.csv
 G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\MySqlConnector.dll

@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using GymManagementSystem.Backend.Entities;
+using GymManagementSystem.Backend.Exceptions;
 using MySqlConnector;
 
 namespace GymManagementSystem.Backend
@@ -38,7 +39,6 @@ namespace GymManagementSystem.Backend
 				{
 					ScheduleID = Convert.ToInt32(reader["ScheduleID"]),
 					MemberID = Convert.ToString(reader["memberID"]),
-					MemberName = Convert.ToString(reader["memberName"]),
 					
 				};
 				_bookings.Add(booking);
@@ -101,9 +101,9 @@ namespace GymManagementSystem.Backend
 			return remainingCap;
 		}
 
-		public void BookLesson(int scheduleID, string memberID, string name)
+		public void BookLesson(int scheduleID, string memberID)
 		{
-			Booking booking = new Booking(scheduleID, memberID, name);
+			Booking booking = new Booking(scheduleID, memberID);
 			_bookings.Add(booking);
 
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -116,18 +116,18 @@ namespace GymManagementSystem.Backend
 
 			using (MySqlConnection connection = new MySqlConnection(builder.ConnectionString))
 			{
+
 				try
 				{
 					connection.Open();
-					MySqlCommand command = new MySqlCommand("INSERT INTO bookings (scheduleID, memberID, memberName) VALUES (@ScheduleID, @MemberID, @Name)", connection);
+					MySqlCommand command = new MySqlCommand("INSERT INTO bookings (scheduleID, memberID) VALUES (@ScheduleID, @MemberID)", connection);
 					command.Parameters.AddWithValue("@ScheduleID", scheduleID);
 					command.Parameters.AddWithValue("@MemberID", memberID);
-					command.Parameters.AddWithValue("@Name", name);
 					command.ExecuteNonQuery();
 				}
 				catch
 				{
-					Console.WriteLine("Error");
+					throw new InvalidBookingException("Booking Failed");
 				}
 				finally
 				{

@@ -34,12 +34,6 @@
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
       <PackagePath>GymManagementSystem.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\BackEnd\Data\lesson.csv">
-      <PackagePath>BackEnd\Data\lesson.csv</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\BackEnd\Data\schedule.csv">
-      <PackagePath>BackEnd\Data\schedule.csv</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GymManagementSystem.exe</PackagePath>
     </AppxPackagedFile>
