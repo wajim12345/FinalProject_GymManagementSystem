@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r7PkqjZF0zVjzgGYtKHQndSdrH4QcaZdcfcpk3KQYm+GMj9eN94yymCYJL9HVk7pF6G9V9AKFJj0c71YhfD1nQ==",
+  "dgSpecHash": "N4dgoZoN8CdEuGRQ7BYoXKvYne135ZKPPHPTh3b3zeuluWXzbFKZXJH+xi92AFzNpbVaPNSWgSJqLH+cDAXbQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\onlyfish\\source\\repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\onlyfish\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\onlyfish\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
