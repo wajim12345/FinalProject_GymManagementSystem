@@ -29,29 +29,29 @@
     <AppXManifest Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-11T20:12:57.038</Modified>
+      <Modified>2023-12-12T03:38:35.669</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-11T19:48:52.083</Modified>
+      <Modified>2023-12-12T03:38:35.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.runtimeconfig.json">
       <PackagePath>GymManagementSystem.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-08T18:17:52.184</Modified>
+      <Modified>2023-12-12T03:38:35.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
       <PackagePath>GymManagementSystem.dll</PackagePath>
-      <Modified>2023-12-11T20:12:56.514</Modified>
+      <Modified>2023-12-12T03:38:34.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GymManagementSystem.exe</PackagePath>
-      <Modified>2023-12-11T20:12:56.519</Modified>
+      <Modified>2023-12-12T03:38:34.555</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.deps.json">
       <PackagePath>GymManagementSystem.deps.json</PackagePath>
-      <Modified>2023-12-11T19:09:14.263</Modified>
+      <Modified>2023-12-12T03:38:35.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jimwa\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.24\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1151,307 +1151,307 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-12-05T02:51:48.591</Modified>
+      <Modified>2023-12-12T03:05:26.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\GymManagementSystem.styles.css">
       <PackagePath>wwwroot\GymManagementSystem.styles.css</PackagePath>
-      <Modified>2023-12-05T02:51:59.080</Modified>
+      <Modified>2023-12-12T03:05:26.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\GymManagementSystem.bundle.scp.css">
       <PackagePath>wwwroot\GymManagementSystem.bundle.scp.css</PackagePath>
-      <Modified>2023-12-05T02:51:59.081</Modified>
+      <Modified>2023-12-12T03:05:26.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
-      <Modified>2023-12-05T02:51:48.509</Modified>
+      <Modified>2023-12-12T03:05:26.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
-      <Modified>2023-12-05T02:51:48.513</Modified>
+      <Modified>2023-12-12T03:05:26.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
-      <Modified>2023-12-05T02:51:48.515</Modified>
+      <Modified>2023-12-12T03:05:26.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
-      <Modified>2023-12-05T02:51:48.560</Modified>
+      <Modified>2023-12-12T03:05:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
-      <Modified>2023-12-05T02:51:48.580</Modified>
+      <Modified>2023-12-12T03:05:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
-      <Modified>2023-12-05T02:51:48.583</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
-      <Modified>2023-12-05T02:51:48.584</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
-      <Modified>2023-12-05T02:51:48.585</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
-      <Modified>2023-12-05T02:51:48.586</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\FONT-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
-      <Modified>2023-12-05T02:51:48.516</Modified>
+      <Modified>2023-12-12T03:05:26.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
-      <Modified>2023-12-05T02:51:48.554</Modified>
+      <Modified>2023-12-12T03:05:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
-      <Modified>2023-12-05T02:51:48.558</Modified>
+      <Modified>2023-12-12T03:05:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
-      <Modified>2023-12-05T02:51:48.629</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2023-12-05T02:51:48.630</Modified>
+      <Modified>2023-12-12T03:05:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:51:59.958</Modified>
+      <Modified>2023-12-12T03:05:26.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:51:59.967</Modified>
+      <Modified>2023-12-12T03:05:26.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:51:59.978</Modified>
+      <Modified>2023-12-12T03:05:26.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:51:59.994</Modified>
+      <Modified>2023-12-12T03:05:26.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.055</Modified>
+      <Modified>2023-12-12T03:05:26.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-12-05T02:51:48.591</Modified>
+      <Modified>2023-12-12T03:05:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-12-05T02:52:00.078</Modified>
+      <Modified>2023-12-12T03:05:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.222</Modified>
+      <Modified>2023-12-12T03:05:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.228</Modified>
+      <Modified>2023-12-12T03:05:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.234</Modified>
+      <Modified>2023-12-12T03:05:26.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.242</Modified>
+      <Modified>2023-12-12T03:05:26.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.275</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.122</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.124</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.132</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.126</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.128</Modified>
+      <Modified>2023-12-12T03:05:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.108</Modified>
+      <Modified>2023-12-12T03:05:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.110</Modified>
+      <Modified>2023-12-12T03:05:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.120</Modified>
+      <Modified>2023-12-12T03:05:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.112</Modified>
+      <Modified>2023-12-12T03:05:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.114</Modified>
+      <Modified>2023-12-12T03:05:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.085</Modified>
+      <Modified>2023-12-12T03:05:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.087</Modified>
+      <Modified>2023-12-12T03:05:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.089</Modified>
+      <Modified>2023-12-12T03:05:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.091</Modified>
+      <Modified>2023-12-12T03:05:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.094</Modified>
+      <Modified>2023-12-12T03:05:26.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.096</Modified>
+      <Modified>2023-12-12T03:05:26.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.098</Modified>
+      <Modified>2023-12-12T03:05:26.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.106</Modified>
+      <Modified>2023-12-12T03:05:26.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.100</Modified>
+      <Modified>2023-12-12T03:05:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.102</Modified>
+      <Modified>2023-12-12T03:05:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.161</Modified>
+      <Modified>2023-12-12T03:05:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.164</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.168</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.173</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.181</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.146</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.148</Modified>
+      <Modified>2023-12-12T03:05:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.150</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.153</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.158</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.134</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.136</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.138</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.140</Modified>
+      <Modified>2023-12-12T03:05:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.143</Modified>
+      <Modified>2023-12-12T03:05:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.185</Modified>
+      <Modified>2023-12-12T03:05:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.189</Modified>
+      <Modified>2023-12-12T03:05:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.193</Modified>
+      <Modified>2023-12-12T03:05:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.200</Modified>
+      <Modified>2023-12-12T03:05:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.216</Modified>
+      <Modified>2023-12-12T03:05:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.102</Modified>
+      <Modified>2023-12-12T03:05:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.107</Modified>
+      <Modified>2023-12-12T03:05:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.114</Modified>
+      <Modified>2023-12-12T03:05:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.127</Modified>
+      <Modified>2023-12-12T03:05:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-12-05T02:52:00.151</Modified>
+      <Modified>2023-12-12T03:05:26.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
-      <Modified>2023-12-05T02:51:48.592</Modified>
+      <Modified>2023-12-12T03:05:26.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
-      <Modified>2023-12-05T02:51:48.624</Modified>
+      <Modified>2023-12-12T03:05:26.014</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -6,10 +6,11 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using MySqlConnector;
 using GymManagementSystem.Backend.Entities;
+using GymManagementSystem.Backend.Exceptions;
 
 namespace GymManagementSystem.Backend
 {
-	internal class MemberManager
+    internal class MemberManager
 	{
 		List<Member> _members = new List<Member>();
 
@@ -19,7 +20,9 @@ namespace GymManagementSystem.Backend
 		int maxId = 0;
 		Member newMember = new Member();
 
+		//public list for lesson booking
 		public List<Member> Members { get { return _members; } }
+
 		public MemberManager()
 		{
 			//LoadMembers();
@@ -103,21 +106,21 @@ namespace GymManagementSystem.Backend
 			{
 				if (member.EmailAddress == email)
 				{
-                    throw new ApplicationException("Email address already exists.");
+                    throw new InvalidAddingException("Email address already exists.");
                 }
 			}
 
 			if (string.IsNullOrWhiteSpace(firstname) || string.IsNullOrWhiteSpace(lastname))
 			{
-				throw new Exception("Name cannot be empty.");
+				throw new InvalidAddingException("Name cannot be empty.");
 			}
 			else if (string.IsNullOrWhiteSpace(phone))
 			{
-				throw new Exception("Phone cannot be empty.");
+				throw new InvalidAddingException("Phone cannot be empty.");
 			}
-			else if (!string.IsNullOrWhiteSpace(email))
+			else if (string.IsNullOrWhiteSpace(email))
 			{
-				throw new Exception("Email cannot be empty.");
+				throw new InvalidAddingException("Email cannot be empty.");
 			}
 			else
 			{
@@ -129,13 +132,39 @@ namespace GymManagementSystem.Backend
 		}
 
 
-		public Member SearchMemberById(int id)
+		public Member SearchMember(string inputID, string name)
 		{
 			foreach (Member member in _members)
 			{
-				if (member.Id == id)
+				if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(name))
 				{
-					return member;
+					throw new InvalidSearchingExecption("Please enter member ID or name.");
+				}
+				// if user enter both id and name
+				else if (!string.IsNullOrEmpty(inputID) && !string.IsNullOrEmpty(name))
+				{
+					int id = int.Parse(inputID);
+					if (member.Id == id && (member.FirstName + ' ' + member.LastName == name))
+					{
+						return member;
+					}
+				}
+				// if user only enter id
+				else if (string.IsNullOrEmpty(name))
+				{
+                    int id = int.Parse(inputID);
+                    if (member.Id == id)
+					{
+                        return member;
+                    }
+				}
+				// if user only enter name
+				else if (string.IsNullOrEmpty(inputID))
+				{
+					if ((member.FirstName + ' ' + member.LastName == name))
+					{
+						return member;
+					}
 				}
 			}
 			return null;
