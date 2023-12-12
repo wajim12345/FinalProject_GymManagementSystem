@@ -125,9 +125,9 @@ namespace GymManagementSystem.Backend
 					command.Parameters.AddWithValue("@MemberID", memberID);
 					command.ExecuteNonQuery();
 				}
-				catch
+				catch(InvalidBookingException e)
 				{
-					throw new InvalidBookingException("Booking Failed");
+					throw new InvalidBookingException("Booking Failed" + e);
 				}
 				finally
 				{
