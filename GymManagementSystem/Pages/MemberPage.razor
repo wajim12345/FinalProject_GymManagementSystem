@@ -4,109 +4,218 @@
 
 
  <style>
+
+     /******* layout *******/
+     .search-section {
+         width: 780px;
+     }
+     .add-member-section {
+         background-color: #E0E0E0;
+         margin-left: 20px;
+         padding: 20px;
+         width: 260px;
+     }
     .flex {
         display: flex;
     }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-bottom: 10px;
+    input, select {
+        margin-bottom: 10px;
+    }
+    /******* button and text *******/
+    button {
+        outline: none;
+        box-shadow: none;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: #1b6ec2;
+        color: white;
+        line-height: 1.8;
+        border-radius: 10px;
+        font-size: 20px;
+        width: 160px;
+    }
+    button:hover {
+        background-color: orange;
+
+    }
+    h1,h3,h5 {
+        font-weight: bold;
+    }
+    .find-member, thead {
+        background-color: #E0E0E0;
+        line-height: 1.5;
+        padding-left: 10px;
     }
 
-
+    .mandatory-field {
+        color: red;
+    }
 </style>
 
 
 <h3>Member Management</h3>
-<h5 class="title-text">Search for a member by ID</h5>
-<label for="inputID">Member ID: </label>
-<input class="inputID" placeholder="member ID" @bind="inputID" /><br>
-<button @onclick="Search">Search</button>
-
-@if (foundMember != null)
-{
-    <div>
-        <p>Member found:</p>
-        <p>Id: @foundMember.Id</p>
-        <p>Name: @foundMember.FirstName @foundMember.LastName</p>
-        <p>Phone Number: @foundMember.Phone</p>
-        <p>Gender: @foundMember.Gender</p>
-        <p>Email: @foundMember.EmailAddress</p>
-        <p>Address: @foundMember.Address</p>
-        <p>Date of Birth: @foundMember.Dob</p>
-    </div>
-}
-else
-{
-    <p>Member not found.</p>
-}
-
-<h5 class="title-text">Add a new member</h5>
-
-    <div class="container">
-        <label>First Name: </label>
-        <input class="input" placeholder="first name" @bind="newFName" /><br>
-    </div>
-    <div class="container">
-        <label>Last Name: </label>
-        <input class="input" placeholder="last name" @bind="newLName" /><br>
-    </div>
-
-    <div class="container">
-        <label>Phone Number: </label>
-        <input class="input" placeholder="000-000-0000" @bind="newPhone" /><br>
-    </div>
-
-    <div class="container">
-        <label>Gender: </label>
-        <select class="long_select" @bind="newGender">
-            <option disabled selected>--select--</option>
-            <option>female</option>
-            <option>male</option>
-            <option>non-binary</option>
-        </select><br>
-    </div>
-
-    <div class="container">
-        <label>Email: </label>
-        <input class="input" placeholder="email" @bind="newEmail" /><br>
-    </div>
-    <div class="container">
-        <label>Address: </label>
-        <input class="input" placeholder="address" @bind="newAddress" /><br>
-    </div>
-    <div class="container">
-        <label>Date of birth: </label>
-        <div class="flex">
-            <select id="year" name="year" @bind="year">
-                <option disabled selected>----</option>
-                @for (int year = 1930; year <= 2015; year++)
-                {
-                    <option value="@year">@year</option>
-                }
-            </select>
-            <select id="month" name="month" @bind="month">
-                <option disabled selected>--</option>
-                @for (int month = 01; month <= 12; month++)
-                {
-                    <option value="@month">@month</option>
-                }
-            </select>
-            <select id="day" name="day" @bind="day">
-                <option disabled selected>--</option>
-                @for (int day = 01; day <= 31; day++)
-                {
-                    <option value="@day">@day</option>
-                }
-            </select>
+<div class="flex">
+    <div class="search-section">
+        <h5 class="find-member">Find Member</h5>
+        <div class="field">
+            <label for="inputID">   Member ID: </label><br>
+            <input class="inputID" placeholder="member ID" @bind=@inputID /><br>
+            <label for="inputName">Member Name: </label><br>
+            <input class="inputName" placeholder="member name" @bind=@inputName /><br>
         </div>
+        <button @onclick="Search">Search</button>
+        <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Date of Birth</th>
+                    </tr>
+                </thead>
+
+                @* the initial text when user enter the page *@
+                @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
+                {
+                    <p>Enter member Id or member name.</p>
+                }
+                @* when user enter member ID *@
+                else if (!string.IsNullOrEmpty(inputID))
+                {
+                    @* check is inputID valid, if valid, check if there is member matching the user input *@
+                    if (int.TryParse(inputID, out _))
+                    {
+                        if (foundMember.Count > 0)
+                        {
+                            <tbody>
+                                @foreach (Member member in foundMember)
+                                {
+                                    <tr>
+                                        <td>@member.Id</td>
+                                        <td>@member.FirstName @member.LastName</td>
+                                        <td>@member.Phone</td>
+                                        <td>@member.Gender</td>
+                                        <td>@member.EmailAddress</td>
+                                        <td>@member.Address</td>
+                                        <td>@member.Dob</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        }
+                        else
+                        {
+                            <p>Member not found.</p>
+                        }
+                    }
+                    @* if user input id is not digit *@
+                    else
+                    {
+                    <p>Invalid member ID.</p>
+                    }
+                }
+                @* if user only enter member name *@
+                else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
+                {
+                    if (foundMember.Count > 0)
+                    {
+                        <tbody>
+                            @foreach (Member member in foundMember)
+                            {
+                                <tr>
+                                    <td>@member.Id</td>
+                                    <td>@member.FirstName @member.LastName</td>
+                                    <td>@member.Phone</td>
+                                    <td>@member.Gender</td>
+                                    <td>@member.EmailAddress</td>
+                                    <td>@member.Address</td>
+                                    <td>@member.Dob</td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                    else
+                    {
+                        <p>Member not found.</p>
+                    }
+                }
+
+         </table>
     </div>
 
-<button @onclick="Add">Add</button>
+    <div class="add-member-section">
+        <h5 class="add-member">Add a new member</h5>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>First Name: </label>
+            <input class="input" placeholder="first name" @bind="newFName" /><br>
+        </div>
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Last Name: </label>
+            <input class="input" placeholder="last name" @bind="newLName" /><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Phone Number: </label>
+            <input class="input" placeholder="000-000-0000" @bind="newPhone" /><br>
+        </div>
+
+        <div class="field">
+            <label>Gender: </label>
+            <select class="long_select" @bind="newGender">
+                <option disabled selected>--select--</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Non-binary</option>
+            </select><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Email: </label>
+            <input class="input" placeholder="email" @bind="newEmail" /><br>
+        </div>
+        <div class="field">
+            <label>Address: </label>
+            <input class="input" placeholder="address" @bind="newAddress" /><br>
+        </div>
+        <div class="field">
+            <label>Date of birth: </label>
+            <div class="flex">
+                <select id="year" name="year" @bind="year">
+                    <option disabled selected>----</option>
+                    @for (int year = 1930; year <= 2015; year++)
+                    {
+                        <option value="@year">@year</option>
+                    }
+                </select>
+                <select id="month" name="month" @bind="month">
+                    <option disabled selected>--</option>
+                    @for (int month = 01; month <= 12; month++)
+                    {
+                        <option value="@month">@month</option>
+                    }
+                </select>
+                <select id="day" name="day" @bind="day">
+                    <option disabled selected>--</option>
+                    @for (int day = 01; day <= 31; day++)
+                    {
+                        <option value="@day">@day</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <button @onclick="Add">Add</button>
+    </div>
+</div>
+
+
 
 @code {
-    private int inputID;
+    private string? inputID;
+    private string? inputName;
 
     private string newFName;
     private string newLName;
@@ -119,11 +228,11 @@ else
     private int day;
     private string newDob;
     private MemberManager memberManager = new MemberManager();
-    private Member foundMember;
+    private List<Member> foundMember = new List<Member>();
 
     private void Add()
     {
-        newDob = $"{year}-{month}-{day}";
+        newDob = $"{year}-{month:D2}-{day:D2}";
         int newMemberId = memberManager.GetMaxId() + 1;
         Member newMember = memberManager.AddMember(newMemberId, newFName, newLName, newPhone, newGender, newEmail, newAddress, newDob);
         memberManager.SaveToDatabase();
@@ -131,6 +240,11 @@ else
 
     private void Search()
     {
-        foundMember = memberManager.SearchMemberById(inputID);
+        foundMember.Clear();
+        Member found = memberManager.SearchMember(inputID, inputName);
+        if (found != null)
+        {
+            foundMember.Add(found);
+        }
     }
 }

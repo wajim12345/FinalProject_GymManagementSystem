@@ -113,7 +113,7 @@ namespace GymManagementSystem.Backend
 			{
 				throw new Exception("Phone cannot be empty.");
 			}
-			else if (!string.IsNullOrWhiteSpace(email))
+			else if (string.IsNullOrWhiteSpace(email))
 			{
 				throw new Exception("Email cannot be empty.");
 			}
@@ -127,13 +127,35 @@ namespace GymManagementSystem.Backend
 		}
 
 
-		public Member SearchMemberById(int id)
+		public Member SearchMember(string inputID, string name)
 		{
 			foreach (Member member in _members)
 			{
-				if (member.Id == id)
+				// if user enter both id and name
+				if (!string.IsNullOrEmpty(inputID) && !string.IsNullOrEmpty(name))
 				{
-					return member;
+					int id = int.Parse(inputID);
+					if (member.Id == id && (member.FirstName + ' ' + member.LastName == name))
+					{
+						return member;
+					}
+				}
+				// if user only enter id
+				else if (string.IsNullOrEmpty(name))
+				{
+                    int id = int.Parse(inputID);
+                    if (member.Id == id)
+					{
+                        return member;
+                    }
+				}
+				// if user only enter name
+				else if (string.IsNullOrEmpty(inputID))
+				{
+					if ((member.FirstName + ' ' + member.LastName == name))
+					{
+						return member;
+					}
 				}
 			}
 			return null;
