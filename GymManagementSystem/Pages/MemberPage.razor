@@ -1,24 +1,28 @@
 ﻿@page "/member"
-@using GymManagementSystem.Data;
 @using GymManagementSystem.Backend;
 @using GymManagementSystem.Backend.Entities;
 
 
- <style>
+<style>
 
-     /******* layout *******/
-     .search-section {
-         width: 780px;
-     }
-     .add-member-section {
-         background-color: #E0E0E0;
-         margin-left: 20px;
-         padding: 20px;
-         width: 260px;
-     }
+    /******* layout *******/
+    .search-section {
+        width: 780px;
+    }
+
+    .add-member-section {
+        background-color: #E0E0E0;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 260px;
+    }
+
     .flex {
         display: flex;
     }
+
     input, select {
         margin-bottom: 10px;
     }
@@ -35,21 +39,27 @@
         font-size: 20px;
         width: 160px;
     }
-    button:hover {
-        background-color: orange;
 
-    }
-    h1,h3,h5 {
+        button:hover {
+            background-color: orange;
+        }
+
+    h1, h3, h5 {
         font-weight: bold;
     }
+
     .find-member-title, thead {
         background-color: #E0E0E0;
         line-height: 1.5;
         padding-left: 10px;
     }
 
-    .mandatory-field {
+    .mandatory-field, .alertMessage, .searchAlertMessage {
         color: red;
+    }
+
+    .successful-message {
+        color: green;
     }
 </style>
 
@@ -65,60 +75,30 @@
             <input class="inputName" placeholder="member name" @bind=@inputName /><br>
         </div>
         <button class="search-button" @onclick="Search">Search</button>
+        <p class="searchAlertMessage">@searchAlertMessage</p>
         <table class="table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Phone Number</th>
-                        <th>Gender</th>
-                        <th>Email</th>
-                        <th>Address</th>
-                        <th>Date of Birth</th>
-                    </tr>
-                </thead>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
 
-                @* the initial text when user enter the page *@
-                @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
-                {
-                    <p>Enter member ID or member name.</p>
-                }
-                @* when user enter member ID *@
-                else if (!string.IsNullOrEmpty(inputID))
-                {
-                    @* check is inputID valid, if valid, check if there is member matching the user input *@
-                    if (int.TryParse(inputID, out _))
-                    {
-                        if (foundMember.Count > 0)
-                        {
-                            <tbody>
-                                @foreach (Member member in foundMember)
-                                {
-                                    <tr>
-                                        <td>@member.Id</td>
-                                        <td>@member.FirstName @member.LastName</td>
-                                        <td>@member.Phone</td>
-                                        <td>@member.Gender</td>
-                                        <td>@member.EmailAddress</td>
-                                        <td>@member.Address</td>
-                                        <td>@member.Dob</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        }
-                        else
-                        {
-                            <p>Member not found.</p>
-                        }
-                    }
-                    @* if user input id is not digit *@
-                    else
-                    {
-                    <p>Invalid member ID.</p>
-                    }
-                }
-                @* if user only enter member name *@
-                else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
+            @* the initial text when user enter the page *@
+            @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
+            {
+                <p>Enter member ID or member name.</p>
+            }
+            @* when user enter member ID *@
+            else if (!string.IsNullOrEmpty(inputID))
+            {
+                @* check is inputID valid, if valid, check if there is member matching the user input *@
+                if (int.TryParse(inputID, out _))
                 {
                     if (foundMember.Count > 0)
                     {
@@ -142,8 +122,39 @@
                         <p>Member not found.</p>
                     }
                 }
+                @* if user input id is not digit *@
+                else
+                {
+                    <p>Invalid member ID.</p>
+                }
+            }
+            @* if user only enter member name *@
+            else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
+            {
+                if (foundMember.Count > 0)
+                {
+                    <tbody>
+                        @foreach (Member member in foundMember)
+                        {
+                            <tr>
+                                <td>@member.Id</td>
+                                <td>@member.FirstName @member.LastName</td>
+                                <td>@member.Phone</td>
+                                <td>@member.Gender</td>
+                                <td>@member.EmailAddress</td>
+                                <td>@member.Address</td>
+                                <td>@member.Dob</td>
+                            </tr>
+                        }
+                    </tbody>
+                }
+                else
+                {
+                    <p>Member not found.</p>
+                }
+            }
 
-         </table>
+        </table>
     </div>
 
     <div class="add-member-section">
@@ -160,7 +171,7 @@
 
         <div class="field">
             <label><span class="mandatory-field">*</span>Phone Number: </label>
-            <input class="input" placeholder="000-000-0000" @bind="newPhone" /><br>
+            <input class="input" placeholder="000-000-0000" @bind="newPhone" maxlength="12" /><br>
         </div>
 
         <div class="field">
@@ -209,6 +220,8 @@
         </div>
 
         <button @onclick="Add">Add</button>
+        <p class="successful-message">@message</p>
+        <p class="alertMessage">@alertMessage</p>
     </div>
 </div>
 
@@ -230,22 +243,87 @@
     private string newDob;
     private MemberManager memberManager = new MemberManager();
     private List<Member> foundMember = new List<Member>();
+    private string message;
+    private string alertMessage;
+    private string searchAlertMessage;
 
+
+    /// <summary>
+    /// Add new member based on user input.
+    /// </summary>
     private void Add()
     {
-        newDob = $"{year}-{month:D2}-{day:D2}";
-        int newMemberId = memberManager.GetMaxId() + 1;
-        Member newMember = memberManager.AddMember(newMemberId, newFName, newLName, newPhone, newGender, newEmail, newAddress, newDob);
-        memberManager.SaveToDatabase();
+        if (!string.IsNullOrEmpty(newFName) && !string.IsNullOrEmpty(newLName) && !string.IsNullOrEmpty(newPhone) && !string.IsNullOrEmpty(newEmail))
+        {
+            if (newPhone.Length != 12)
+            {
+                alertMessage = "Phone number should be in formatted 000-000-0000";
+            }
+            else
+            {
+                memberManager.LoadMemberFromDatabase();
+                foreach (Member member in memberManager.Members)
+                {
+                    if (newEmail == member.EmailAddress)
+                    {
+                        alertMessage = "This email has been assigned";
+                        break;
+                    }
+                    else
+                    {
+                        alertMessage = "";
+                    }
+                }
+                if (alertMessage == "")
+                {
+                    newDob = $"{year}-{month:D2}-{day:D2}";
+                    int newMemberId = memberManager.GetMaxId() + 1;
+                    Member newMember = memberManager.AddMember(newMemberId, newFName, newLName, newPhone, newGender, newEmail, newAddress, newDob);
+                    alertMessage = "";
+                    message = "";
+                    message = "Successfully Added!";
+                    memberManager.SaveToDatabase();
+                }
+            }
+        }
+        else if (string.IsNullOrEmpty(newFName) || string.IsNullOrEmpty(newLName))
+        {
+            message = "";
+            alertMessage = "Name cannot be empty.";
+        }
+        else if (string.IsNullOrEmpty(newPhone))
+        {
+            message = "";
+            alertMessage = "Phone cannot be empty.";
+        }
+        else if (string.IsNullOrEmpty(newEmail))
+        {
+            message = "";
+            alertMessage = "Email cannot be empty.";
+        }
+
+
     }
 
+
+    /// <summary>
+    /// Search members based on user input.
+    /// </summary>
     private void Search()
     {
-        foundMember.Clear();
-        Member found = memberManager.SearchMember(inputID, inputName);
-        if (found != null)
+        if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
         {
-            foundMember.Add(found);
+            searchAlertMessage = "Please enter member ID or name";
+        }
+        else
+        {
+            searchAlertMessage = "";
+            foundMember.Clear();
+            Member found = memberManager.SearchMember(inputID, inputName);
+            if (found != null)
+            {
+                foundMember.Add(found);
+            }
         }
     }
 }
