@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GymManagementSystem.Backend
+namespace GymManagementSystem.Backend.Exceptions
 {
     internal class InvalidSearchingExecption : Exception
     {
-        public InvalidSearchingExecption() 
-        { 
+        public InvalidSearchingExecption()
+        {
 
         }
 

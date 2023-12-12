@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using GymManagementSystem.Backend.Entities;
+using GymManagementSystem.Backend.Exceptions;
 using MySqlConnector;
+
 
 namespace GymManagementSystem.Backend
 {
-	internal class MemberManager
+    internal class MemberManager
 	{
 		public List<Member> Members { get { return _members; } }
 
