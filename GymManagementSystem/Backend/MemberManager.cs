@@ -101,21 +101,21 @@ namespace GymManagementSystem.Backend
 			{
 				if (member.EmailAddress == email)
 				{
-                    throw new ApplicationException("Email address already exists.");
+                    throw new InvalidAddingException("Email address already exists.");
                 }
 			}
 
 			if (string.IsNullOrWhiteSpace(firstname) || string.IsNullOrWhiteSpace(lastname))
 			{
-				throw new Exception("Name cannot be empty.");
+				throw new InvalidAddingException("Name cannot be empty.");
 			}
 			else if (string.IsNullOrWhiteSpace(phone))
 			{
-				throw new Exception("Phone cannot be empty.");
+				throw new InvalidAddingException("Phone cannot be empty.");
 			}
 			else if (string.IsNullOrWhiteSpace(email))
 			{
-				throw new Exception("Email cannot be empty.");
+				throw new InvalidAddingException("Email cannot be empty.");
 			}
 			else
 			{
@@ -131,8 +131,12 @@ namespace GymManagementSystem.Backend
 		{
 			foreach (Member member in _members)
 			{
+				if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(name))
+				{
+					throw new InvalidSearchingExecption("Please enter member ID or name.");
+				}
 				// if user enter both id and name
-				if (!string.IsNullOrEmpty(inputID) && !string.IsNullOrEmpty(name))
+				else if (!string.IsNullOrEmpty(inputID) && !string.IsNullOrEmpty(name))
 				{
 					int id = int.Parse(inputID);
 					if (member.Id == id && (member.FirstName + ' ' + member.LastName == name))
