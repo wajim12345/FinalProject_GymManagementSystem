@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>B32C680C-A6CF-4EB0-A9C4-1D941EC9FE4E</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>A8F89BAE2FB7FC36C6358EC0E6C5C026A69344B537F7F7D63D1FE13D564E40FF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>B32C680C-A6CF-4EB0-A9C4-1D941EC9FE4E_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>B32C680C-A6CF-4EB0-A9C4-1D941EC9FE4E_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,32 +27,32 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-12T02:43:06.165</Modified>
+      <Modified>2023-12-12T04:35:58.849</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-12T02:43:05.785</Modified>
+      <Modified>2023-12-12T04:34:33.831</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.runtimeconfig.json">
       <PackagePath>GymManagementSystem.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-11T02:42:53.362</Modified>
+      <Modified>2023-12-12T04:34:33.567</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.dll">
       <PackagePath>GymManagementSystem.dll</PackagePath>
-      <Modified>2023-12-12T02:43:04.197</Modified>
+      <Modified>2023-12-12T04:34:31.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GymManagementSystem.exe</PackagePath>
-      <Modified>2023-12-12T02:43:04.322</Modified>
+      <Modified>2023-12-12T04:34:32.034</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.deps.json">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\GymManagementSystem.deps.json">
       <PackagePath>GymManagementSystem.deps.json</PackagePath>
-      <Modified>2023-12-11T02:42:53.227</Modified>
+      <Modified>2023-12-12T04:34:33.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\onlyfish\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1150,307 +1150,307 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2023-04-24T18:09:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-12-11T02:34:39.246</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\GymManagementSystem.styles.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\GymManagementSystem.styles.css">
       <PackagePath>wwwroot\GymManagementSystem.styles.css</PackagePath>
       <Modified>2023-12-11T02:34:40.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\GymManagementSystem.bundle.scp.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\GymManagementSystem.bundle.scp.css">
       <PackagePath>wwwroot\GymManagementSystem.bundle.scp.css</PackagePath>
       <Modified>2023-12-11T02:34:40.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\app.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
       <Modified>2023-12-11T02:34:40.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
       <Modified>2023-12-11T02:34:40.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
       <Modified>2023-12-11T02:34:40.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
       <Modified>2023-12-11T02:34:40.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
       <Modified>2023-12-11T02:34:40.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
       <Modified>2023-12-11T02:34:40.370</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
       <Modified>2023-12-11T02:34:40.371</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
       <Modified>2023-12-11T02:34:40.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
       <Modified>2023-12-11T02:34:40.372</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\FONT-LICENSE">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\FONT-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
       <Modified>2023-12-11T02:34:40.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\ICON-LICENSE">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
       <Modified>2023-12-11T02:34:40.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\README.md">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
       <Modified>2023-12-11T02:34:40.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\favicon.ico">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
       <Modified>2023-12-11T02:34:40.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\index.html">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
       <Modified>2023-12-11T02:34:40.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.345</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.346</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
       <Modified>2023-12-11T02:34:40.319</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
       <Modified>2023-12-11T02:34:40.320</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.322</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.322</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
       <Modified>2023-12-11T02:34:40.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
       <Modified>2023-12-11T02:34:40.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
       <Modified>2023-12-11T02:34:40.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
       <Modified>2023-12-11T02:34:40.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
       <Modified>2023-12-11T02:34:40.325</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
       <Modified>2023-12-11T02:34:40.325</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
       <Modified>2023-12-11T02:34:40.326</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
       <Modified>2023-12-11T02:34:40.326</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
       <Modified>2023-12-11T02:34:40.327</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
       <Modified>2023-12-11T02:34:40.327</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.327</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.328</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.328</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
       <Modified>2023-12-11T02:34:40.330</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
       <Modified>2023-12-11T02:34:40.330</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
       <Modified>2023-12-11T02:34:40.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
       <Modified>2023-12-11T02:34:40.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
       <Modified>2023-12-11T02:34:40.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.333</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.333</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.335</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.335</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.339</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.339</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.339</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.340</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.340</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.341</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
       <Modified>2023-12-11T02:34:40.341</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
       <Modified>2023-12-11T02:34:40.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
       <Modified>2023-12-11T02:34:40.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
       <Modified>2023-12-11T02:34:40.343</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2023-12-11T02:34:40.344</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\Shared\MainLayout.razor.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
       <Modified>2023-12-11T02:34:39.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\Shared\NavMenu.razor.css">
+    <AppxPackagedFile Include="C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
       <Modified>2023-12-11T02:34:39.248</Modified>
     </AppxPackagedFile>

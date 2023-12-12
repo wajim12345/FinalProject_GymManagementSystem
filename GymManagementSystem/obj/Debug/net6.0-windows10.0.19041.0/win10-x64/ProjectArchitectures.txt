@@ -1,1 +1,1 @@
-C:\Users\onlyfish\Source\Repos\FinalProject_GymManagementSystem\GymManagementSystem\GymManagementSystem.csproj;x64
+C:\Users\onlyfish\source\repos\FinalProject_GymManagementSystem\GymManagementSystem\GymManagementSystem.csproj;x64
