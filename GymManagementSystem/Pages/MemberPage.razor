@@ -41,7 +41,7 @@
     h1,h3,h5 {
         font-weight: bold;
     }
-    .find-member, thead {
+    .find-member-title, thead {
         background-color: #E0E0E0;
         line-height: 1.5;
         padding-left: 10px;
@@ -56,14 +56,14 @@
 <h3>Member Management</h3>
 <div class="flex">
     <div class="search-section">
-        <h5 class="find-member">Find Member</h5>
+        <h5 class="find-member-title">Find Member</h5>
         <div class="field">
-            <label for="inputID">   Member ID: </label><br>
+            <label class="memberID" for="inputID">Member ID: </label><br>
             <input class="inputID" placeholder="member ID" @bind=@inputID /><br>
-            <label for="inputName">Member Name: </label><br>
+            <label class="memberName" for="inputName">Member Name: </label><br>
             <input class="inputName" placeholder="member name" @bind=@inputName /><br>
         </div>
-        <button @onclick="Search">Search</button>
+        <button class="search-button" @onclick="Search">Search</button>
         <table class="table">
                 <thead>
                     <tr>
@@ -80,7 +80,7 @@
                 @* the initial text when user enter the page *@
                 @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
                 {
-                    <p>Enter member Id or member name.</p>
+                    <p>Enter member ID or member name.</p>
                 }
                 @* when user enter member ID *@
                 else if (!string.IsNullOrEmpty(inputID))
