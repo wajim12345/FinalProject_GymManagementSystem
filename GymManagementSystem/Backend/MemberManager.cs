@@ -10,6 +10,8 @@ namespace GymManagementSystem.Backend
 {
 	internal class MemberManager
 	{
+		public List<Member> Members { get { return _members; } }
+
 		List<Member> _members = new List<Member>();
 
 		const string MEMBER_FILE = "Data/members.csv";
