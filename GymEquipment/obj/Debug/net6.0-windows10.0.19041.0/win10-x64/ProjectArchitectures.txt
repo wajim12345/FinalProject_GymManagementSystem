@@ -1,0 +1,1 @@
+C:\Users\zacru\source\repos\GymEquipment\GymEquipment\GymEquipment.csproj;x64
