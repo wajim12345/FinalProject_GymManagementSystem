@@ -1,0 +1,64 @@
+# Ignore artifacts, build files, and directories
+bin/
+obj/
+Debug/
+Release/
+packages/
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# Ignore Visual Studio files
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.vscode/
+*.sln.docstates
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.bak
+*.dll
+*.exe
+*.pdb
+*.opendb
+*.log
+*.idb
+*.hdf
+[Tt]est[Rr]esult*
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+
+# Ignore Rider files
+.idea/
+
+# Ignore MAUI files
+*.maui
+*.maui.xml
+*.maui.csproj
+*.maui.dotsettings
+*.maui.suo
+*.maui.userprefs
+*.maui.user
+
+# Ignore user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+ehthumbs.db
+Thumbs.db

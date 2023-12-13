@@ -1,149 +1,89 @@
 ﻿@using Microsoft.Maui.Storage
 @using System.IO
 @using System.Text.Json
-@using GymManagementSystem.Backend;
-@using GymManagementSystem.Backend.Entities;
+@using GymManagementSystem.Backend
+@using GymManagementSystem.Backend.Entities
 
 
 @page "/location"
 
 
 <style>
-    body {
-        margin: auto;
-        font-family: Sans-serif;
-        width: auto;
-        margin: 0 auto;
+
+    /******* layout *******/
+    .search-section {
+        width: 780px;
     }
 
-    h2 {
-        text-align: center;
+    .add-location-section {
+        background-color: #E0E0E0;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 260px;
     }
 
-    h3 {
-        text-align: center;
-        height: 45px;
-        line-height: 45px;
-        font-size: 25px;
-    }
-
-    .location-group {
-        margin-bottom: 15px;
-    }
-
-    label {
-        display: inline-block;
-        max-width: 100%;
-        margin-bottom: 5px;
-        font-weight: 700;
-    }
-
-    select {
-        text-transform: none;
-    }
-
-    .search-style {
-        display: block;
-        width: 100%;
-        height: 34px;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #555;
-        background-color: white;
-        background-image: none;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-    }
-
-    .search-flex {
+    .flex {
         display: flex;
     }
 
-    .search-flex-item {
-        flex: 1;
-        padding-left: 10px;
+    input, select {
+        margin-bottom: 10px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 5px;
     }
-
-     .button {
-        background-color: #2d85eb;
+    /******* button and text *******/
+    button {
+        outline: none;
+        box-shadow: none;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: #1b6ec2;
         color: white;
-        display: inline-block;
-        margin-bottom: 0;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        touch-action: manipulation;
-        cursor: pointer;
-        background-image: none;
-        border: 1px solid transparent;
-        padding: 6px 12px;
-        font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.8;
         border-radius: 4px;
+        border: #1b6ec2;
+        font-size: 20px;
+        width: 205px;
     }
 
-    .button-pos {
-        text-align: center;
+        button:hover {
+            background-color: orange;
+        }
+
+    h1, h3, h5 {
+        font-weight: bold;
     }
 
-    .add-button {
-        width: 25%;
-    }
-
-    .find-button {
-        flex: 1;
-        padding-left: 10px;
-        display: block;
-        width: 100%;
-        height: 34px;
-        font-size: 14px;
+    .find-location-title, thead {
+        background-color: #E0E0E0;
         line-height: 1.5;
-        background-color: #2d85eb;
-        background-image: none;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-    }
-
-    .province-style {
-        display: block;
-        width: 600px;
-        height: 34px;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #555;
-        background-color: white;
-        background-image: none;
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        flex: 1;
         padding-left: 10px;
     }
 
+    .mandatory-field, .alertMessage, .searchAlertMessage {
+        color: red;
+    }
+
+    .successful-message {
+        color: green;
+    }
 </style>
 
 <body>
 <h2>Location Management</h2>
 
-    <div class="location-group">
-        <div class="search-flex">
-            <div class="search-flex-item">
-                <label>Province: </label>
-                <div>
-                    <input type="text" id="province" name="province" placeholder="Any" @bind="searchProvince" class="province-style" />
-                </div>
-            </div>
+ <div class="flex">
+    <div class="search-section">
+        <h5 class="find-location-title">Find Location</h5>
+        <div class="field">
+                <input class="inputID" placeholder="Province" @bind=@searchProvince /><br>
 
-            <div class="search-flex-item">
-                <label>Search Location</label>
-                <button @onclick="FindLocations" class="button find-button">Find Locations</button>
-            </div>
         </div>
-    </div>
+        <button class="search-button" @onclick="FindLocations">Search</button>
 
-
-    <h3>Locations</h3>
-    <div>
         <table class="table">
             <thead>
                 <tr>
@@ -173,32 +113,32 @@
 
     </div>
 
-    <h3>Add Location</h3>
-    <div class="location-group">
-        <div class="search-flex">
-            <div class="search-flex-item">
-            <label>Street Address: </label>
-                <input placeholder="Street Address" @bind="input_street_address" class="search-style" />
+    <div class="add-location-section">
+        <h5 class="add-location">Add a new location</h5>
 
-            <label>City: </label>
-            <input placeholder="City" @bind="input_city" class="search-style" />
-
-                <label>Province: </label>
-                <input placeholder="Province" @bind="input_province" class="search-style" />
-
-            <label>Country: </label>
-            <input placeholder="Country" @bind="input_country" class="search-style" />
-
-            <label>Zip Code: </label>
-            <input placeholder="Zip Code" @bind="input_zip_code" class="search-style" />
-
-                    </div>
-            </div>
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Street Address: </label>
+                    <input class="input" placeholder="Street Address" @bind="input_street_address" /><br>
         </div>
-            <div class="location-group">
-            <div class="button-pos">
-            <input type="submit" @onclick="AddLocations" value="Add Locations" class="button add-button" />
+        <div class="field">
+            <label><span class="mandatory-field">*</span>City: </label>
+                    <input class="input" placeholder="City" @bind="input_city" /><br>
+        </div>
 
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Province: </label>
+                    <input class="input" placeholder="Province" @bind="input_province" /><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Country: </label>
+                    <input class="input" placeholder="Country" @bind="input_country" /><br>
+        </div>
+        <div class="field">
+                    <label><span class="mandatory-field">*</span>Zip Code: </label>
+                    <input class="input" placeholder="Zip Code" @bind="input_zip_code" /><br>
+        </div>
+            <button @onclick="AddLocations">Add</button>
         </div>
         </div>
 </body>

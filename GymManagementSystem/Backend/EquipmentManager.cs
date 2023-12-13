@@ -10,7 +10,12 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
-    internal class EquipmentManager
+	/// <summary>
+	/// Manager class for Equipment
+	/// </summary>
+	/// <remarks> Author: Zac Ruff</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
+	internal class EquipmentManager
     {
         List<Equipment> _equipmentList = new List<Equipment>();
         const string EQUIPMENT_FILE = "Data/equipment.csv";

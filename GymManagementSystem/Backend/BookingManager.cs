@@ -10,6 +10,11 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
+	/// <summary>
+	/// Manager class for Booking
+	/// </summary>
+	/// <remarks> Author: Jim Wang</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
 	internal class BookingManager
 	{
 		protected List<Booking> _bookings = new List<Booking>();
@@ -20,6 +25,9 @@ namespace GymManagementSystem.Backend
 		}
 
 
+		/// <summary>
+		/// Connects to Database and read the data convert into a list of booking objects
+		/// </summary>
 		public void LoadFromDatabase()
 		{
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -47,6 +55,9 @@ namespace GymManagementSystem.Backend
 			connection.Close();
 		}
 
+		/// <summary>
+		/// Connects to database and save the data
+		/// </summary>
 		public void SaveToDatabase()
 		{
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -63,27 +74,12 @@ namespace GymManagementSystem.Backend
 			connection.Close();
 			
 		}
-		/*public void SaveBooking()
-		{
-			string booking = JsonSerializer.Serialize(_bookings);
-			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, BOOKING_JSON_FILE);
-			File.WriteAllText(path, booking);
-		}*/
-
-		/*public void LoadBooking()
-		{
-			string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, BOOKING_JSON_FILE);
-			if(!File.Exists(path))
-			{
-				return;
-			}
-			else
-			{
-				string content = File.ReadAllText(path);
-				_bookings = JsonSerializer.Deserialize<List<Booking>>(content); 
-			}
-		}*/
-
+		
+		/// <summary>
+		/// Checks avalability of a schedule
+		/// </summary>
+		/// <param name="schedule"></param>
+		/// <returns></returns>
 		public int AvailableCapacity(Schedule schedule)
 		{
 			int capBooked = 0;
@@ -101,6 +97,12 @@ namespace GymManagementSystem.Backend
 			return remainingCap;
 		}
 
+		/// <summary>
+		/// Create a booking object in the list and also create a row in booking table in database
+		/// </summary>
+		/// <param name="scheduleID"></param>
+		/// <param name="memberID"></param>
+		/// <exception cref="InvalidBookingException"></exception>
 		public void BookLesson(int scheduleID, string memberID)
 		{
 			Booking booking = new Booking(scheduleID, memberID);
