@@ -149,7 +149,7 @@
     private string search_city { get; set; }
     private string selectedLocation { get; set; }
     private Location newLocation { get; set; }
-    private List<Location> _locations = new List<Location>();
+    private List<Backend.Entities.Location> _locations = new List<Backend.Entities.Location>();
     private LocationManager locationManager = new();
 
     // display location
@@ -177,7 +177,7 @@
 
     private void AddLocations()
     {
-        Location newLocation = new Location()
+        Backend.Entities.Location newLocation = new Backend.Entities.Location()
             {
                 City = input_city,
                 Country = input_country,

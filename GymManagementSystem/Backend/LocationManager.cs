@@ -20,7 +20,6 @@ namespace GymManagementSystem.Backend
 
         public LocationManager()
         {
-
             LoadLocationsFromDB();
         }
 

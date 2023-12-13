@@ -11,7 +11,7 @@ namespace GymManagementSystem.Backend.Entities
 		public int Id { get; set; }
 		public int Code { get; set; }
 		public string Time {  get; set; }
-		public string Location { get; set; }
+		public int LocationID { get; set; }
 		public int Duration { get; set; }
 		public int Capacity { get; set; }
 
@@ -20,11 +20,11 @@ namespace GymManagementSystem.Backend.Entities
 
 		}
 
-		public Schedule(int code, string time, string location, int duration, int capacity)
+		public Schedule(int code, string time, int locationID, int duration, int capacity)
 		{
 			Code = code;
 			Time = time;
-			Location = location;
+			LocationID = locationID;
 			Duration = duration;
 			Capacity = capacity;
 		}
@@ -33,7 +33,8 @@ namespace GymManagementSystem.Backend.Entities
 		{
 			DateTime time = DateTime.Parse(Time);
 			DateTime newTime = time .AddMinutes(Duration);
-			return newTime.ToString("hh:mm");
+			return newTime.ToString("HH:mm");
 		}
+		
 	}
 }
