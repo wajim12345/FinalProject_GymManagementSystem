@@ -175,7 +175,8 @@ namespace GymManagementSystem.Backend
                 else if (!string.IsNullOrEmpty(inputID) && !string.IsNullOrEmpty(name))
                 {
                     int id = int.Parse(inputID);
-                    if (member.Id == id && (member.FirstName + ' ' + member.LastName == name))
+                    if (member.Id == id && (member.FirstName + ' ' + member.LastName
+                        ).ToLower() == name.ToLower())
                     {
                         return member;
                     }
@@ -192,7 +193,7 @@ namespace GymManagementSystem.Backend
                 // if user only enter name
                 else if (string.IsNullOrEmpty(inputID))
                 {
-                    if ((member.FirstName + ' ' + member.LastName == name))
+                    if ((member.FirstName + ' ' + member.LastName).ToLower() == name.ToLower())
                     {
                         return member;
                     }
