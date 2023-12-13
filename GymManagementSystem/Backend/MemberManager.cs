@@ -10,7 +10,12 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
-    internal class MemberManager
+	/// <summary>
+	/// Manager class for Member
+	/// </summary>
+	/// <remarks> Author: Chunxia Huang</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
+	internal class MemberManager
     {
         public List<Member> Members { get { return _members; } }
 

@@ -9,38 +9,29 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
+	/// <summary>
+	/// Manager class for Schedule
+	/// </summary>
+	/// <remarks> Author: Jim Wang</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
 	internal class ScheduleManager
 	{
 		protected List<Schedule> _schedules = new List<Schedule>();
 		protected List<Entities.Location> _locations = new List<Entities.Location>();
 		public List<Schedule> Schedules { get {  return _schedules; } }
 		public List<Entities.Location> Locations { get {  return _locations; } }
-		const string SCHEDULE_FILE = "BackEnd/Data/schedule.csv";
 
 		public ScheduleManager()
 		{
 			LoadFromDatabase();
 			LoadLocationFromDatabase();
-			//LoadSchedule();
+
 		}
 
-		/*public void LoadSchedule()
-		{
-			string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, SCHEDULE_FILE);
-			string[] lines = File.ReadAllLines(filePath);
-			foreach (string line in lines)
-			{
-				string[] column = line.Split(',');
-				int code = int.Parse(column[0]);
-				string time = column[1];
-				string location = column[2];
-				int duration = int.Parse(column[3]);
-				int capacity = int.Parse(column[4]);
-				Schedule schedule = new Schedule(code, time, location, duration, capacity);
-				_schedules.Add(schedule);
-			}
-		}*/
 
+		/// <summary>
+		/// Connects to Database and read the data convert into a list of schedule objects
+		/// </summary>
 		public void LoadFromDatabase()
 		{
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -70,7 +61,9 @@ namespace GymManagementSystem.Backend
 
 			connection.Close();
 		}
-
+		/// <summary>
+		/// Connects to Database and read the data convert into a list of location objects
+		/// </summary>
 		public void LoadLocationFromDatabase()
 		{
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder

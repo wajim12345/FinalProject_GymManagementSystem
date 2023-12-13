@@ -8,6 +8,11 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
+	/// <summary>
+	/// Manager class for Location
+	/// </summary>
+	/// <remarks> Author: Qianjun Liang</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
 	public class LocationManager
 	{
 		List<Entities.Location> _locations = new List<Entities.Location>();

@@ -261,6 +261,10 @@
 	private string memberID;
 	private string message;
 
+	/// <summary>
+	/// Search list of schedule to find matching code
+	/// If no lesson is selected, it will return an error message
+	/// </summary>
 	public void FindSchedules()
 	{
 		if (lessonCode != 0)
@@ -283,6 +287,11 @@
 		}
 	}
 
+	/// <summary>
+	/// Radio button function
+	/// Select Schedule will set variable data, which will then auto fill the booking fields
+	/// </summary>
+	/// <param name="schedule"></param>
 	private void SelectSchedule(Schedule schedule)
 	{
 		selectedSchedule = schedule;
@@ -294,6 +303,11 @@
 		selectedEndTime = schedule.EndTime();
 	}
 
+	/// <summary>
+	/// Confirmation button function
+	/// ConfirmBooking checks all booking fields.
+	/// It will only create booking when all fileds are entered correctly
+	/// </summary>
 	public void ConfirmBooking()
 	{
 

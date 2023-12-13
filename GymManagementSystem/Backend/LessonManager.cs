@@ -8,6 +8,11 @@ using MySqlConnector;
 
 namespace GymManagementSystem.Backend
 {
+	/// <summary>
+	/// Manager class for Lesson
+	/// </summary>
+	/// <remarks> Author: Jim Wang</remarks>
+	/// <remarks>Date: Dec 12, 2023</remarks>
 	internal class LessonManager
 	{
 		protected List<Lesson> _lessons = new List<Lesson>();
@@ -18,6 +23,9 @@ namespace GymManagementSystem.Backend
 			//LoadLessons();
 		}
 
+		/// <summary>
+		/// Connects to Database and read the data convert into a list of lesson objects
+		/// </summary>
 		public void LoadFromDatabase()
 		{
 			MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -44,19 +52,6 @@ namespace GymManagementSystem.Backend
 
 			connection.Close();
 		}
-		/*public void LoadLessons()
-		{
-			string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, LESSONS_FILE);
-			string[] lines = File.ReadAllLines(filePath);
-			foreach (string line in lines)
-			{
-				string[] column = line.Split(',');
-				int code = int.Parse(column[0]);
-				string name = column[1];
-				string description = column[2];
-				Lesson lesson = new Lesson(code, name, description);
-				_lessons.Add(lesson);
-			}
-		}*/
+		
 	}
 }
