@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ltgcboOvUZLahWbCO2xxyLs9tw1Ng+5ovGLXfxxbIg0=",
+  "Hash": "shAEZDppw4ebSmWF4BtsXTK6GYOzMkEupHYpcAwuJ64=",
   "Source": "GymManagementSystem",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "GymManagementSystem\\wwwroot",
       "Source": "GymManagementSystem",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\GymManagementSystem.styles.css",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\GymManagementSystem.styles.css",
       "SourceId": "GymManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "GymManagementSystem.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\GymManagementSystem.styles.css"
+      "OriginalItemSpec": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\GymManagementSystem.styles.css"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\GymManagementSystem.bundle.scp.css",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\GymManagementSystem.bundle.scp.css",
       "SourceId": "GymManagementSystem",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "GymManagementSystem.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\GymManagementSystem.bundle.scp.css"
+      "OriginalItemSpec": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\GymManagementSystem.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\app.css",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\app.css",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\favicon.ico",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\favicon.ico",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\index.html",
+      "Identity": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\index.html",
       "SourceId": "GymManagementSystem",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
+      "ContentRoot": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",

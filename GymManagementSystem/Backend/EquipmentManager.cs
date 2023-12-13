@@ -81,7 +81,7 @@ namespace GymManagementSystem.Backend
                 throw new InvalidAddingException("Weight cannot be empty. Enter 'N/A' if the type is machine.");
             else
             {
-                Equipment newEquipment = new(id, name, type, weight);
+                newEquipment = new(id, name, type, weight);
                 _equipmentList.Add(newEquipment);
                 return newEquipment;
             }
