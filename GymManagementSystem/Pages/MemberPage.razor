@@ -95,70 +95,22 @@
                     <th>Date of Birth</th>
                 </tr>
             </thead>
-
-            @* the initial text when user enter the page *@
-            @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
+            @if (foundMember.Count > 0)
             {
-                <p>Enter member ID or member name.</p>
-            }
-            @* when user enter member ID *@
-            else if (!string.IsNullOrEmpty(inputID))
-            {
-                @* check is inputID valid, if valid, check if there is member matching the user input *@
-                if (int.TryParse(inputID, out _))
-                {
-                    if (foundMember.Count > 0)
+                <tbody>
+                    @foreach (Member member in foundMember)
                     {
-                        <tbody>
-                            @foreach (Member member in foundMember)
-                            {
-                                <tr>
-                                    <td>@member.Id</td>
-                                    <td>@member.FirstName @member.LastName</td>
-                                    <td>@member.Phone</td>
-                                    <td>@member.Gender</td>
-                                    <td>@member.EmailAddress</td>
-                                    <td>@member.Address</td>
-                                    <td>@member.Dob</td>
-                                </tr>
-                            }
-                        </tbody>
+                    <tr>
+                        <td>@member.Id</td>
+                        <td>@member.FirstName @member.LastName</td>
+                        <td>@member.Phone</td>
+                        <td>@member.Gender</td>
+                        <td>@member.EmailAddress</td>
+                        <td>@member.Address</td>
+                        <td>@member.Dob</td>
+                    </tr>
                     }
-                    else
-                    {
-                        <p>Member not found.</p>
-                    }
-                }
-                @* if user input id is not digit *@
-                else
-                {
-                    <p>Invalid member ID.</p>
-                }
-            }
-            @* if user only enter member name *@
-            else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
-            {
-                if (foundMember.Count > 0)
-                {
-                    <tbody>
-                        @foreach (Member member in foundMember)
-                        {
-                            <tr>
-                                <td>@member.Id</td>
-                                <td>@member.FirstName @member.LastName</td>
-                                <td>@member.Phone</td>
-                                <td>@member.Gender</td>
-                                <td>@member.EmailAddress</td>
-                                <td>@member.Address</td>
-                                <td>@member.Dob</td>
-                            </tr>
-                        }
-                    </tbody>
-                }
-                else
-                {
-                    <p>Member not found.</p>
-                }
+                </tbody>
             }
 
         </table>
@@ -319,19 +271,54 @@
     private void Search()
     {
         initialMessage = "";
+        foundMember.Clear();
         if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
         {
             searchAlertMessage = "Please enter member ID or name";
         }
-        else
+        else if (!string.IsNullOrEmpty(inputID))
+        {
+            if (int.TryParse(inputID, out _))
+            {
+                searchAlertMessage = "";
+                //foundMember.Clear();
+                Member found = memberManager.SearchMember(inputID, inputName);
+                if (found != null)
+                {
+                    foundMember.Add(found);
+                }
+                else
+                {
+                    searchAlertMessage = "Member not found.";
+                }
+            }
+            else
+            {
+                searchAlertMessage = "Invalid member ID";
+            }
+        }
+        else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
         {
             searchAlertMessage = "";
-            foundMember.Clear();
             Member found = memberManager.SearchMember(inputID, inputName);
             if (found != null)
             {
                 foundMember.Add(found);
             }
+            else
+            {
+                searchAlertMessage = "Member not found.";
+            }
         }
+        // else
+        // {
+        //     searchAlertMessage = "";
+        //     foundMember.Clear();
+        //     Member found = memberManager.SearchMember(inputID, inputName);
+        //     if (found != null)
+        //     {
+        //         foundMember.Add(found);
+        //     }
+        // }
     }
 }
