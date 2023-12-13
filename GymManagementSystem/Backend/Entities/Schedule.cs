@@ -28,7 +28,10 @@ namespace GymManagementSystem.Backend.Entities
 			Duration = duration;
 			Capacity = capacity;
 		}
-
+		/// <summary>
+		/// Calculate the EndTime for the schedule in 24 hour format
+		/// </summary>
+		/// <returns></returns>
 		public string EndTime()
 		{
 			DateTime time = DateTime.Parse(Time);
