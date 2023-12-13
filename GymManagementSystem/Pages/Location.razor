@@ -168,13 +168,19 @@
     private string input_country;
     private string input_zip_code;
 
+
+	/// <summary>
+	/// Search list of location to find matching code
+	/// </summary>
     private void FindLocations()
     {
         _locations = locationManager.LoadLocationsFromDB(searchProvince);
         Console.WriteLine($"Searching for: {searchProvince}");
     }
 
-
+	/// <summary>
+	/// Add the location based on the input location information on the page
+	/// </summary>
     private void AddLocations()
     {
         Backend.Entities.Location newLocation = new Backend.Entities.Location()

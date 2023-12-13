@@ -28,6 +28,10 @@ namespace GymManagementSystem.Backend
 			LoadLocationsFromDB();
 		}
 
+
+		/// <summary>
+		/// Save the location information to DB
+		/// </summary>
 		public int SaveLocationsToDB(Entities.Location newLocation)
 		{
 			int addResult = 0;
@@ -48,14 +52,18 @@ namespace GymManagementSystem.Backend
 			return addResult;
 		}
 
-
+		/// <summary>
+		/// Connect to the database
+		/// </summary>
 		private MySqlConnection getSqlConnect()
 		{
 			string connectionString = "server=localhost;user=root;database=gymdata;password=password;port=3306;";
 			return new MySqlConnection(connectionString);
 		}
 
-
+		/// <summary>
+		/// Filter the location inforamtion from DB based on the province
+		/// </summary>
 		public List<Entities.Location> LoadLocationsFromDB(string province)
 		{
 			try
@@ -97,6 +105,10 @@ namespace GymManagementSystem.Backend
 			return _locations;
 		}
 
+
+		/// <summary>
+		/// Find the locaiton information in the csv file
+		/// </summary>
 		public void LoadLocations()
 		{
 			string[] lines = File.ReadAllLines(location_file);
@@ -115,6 +127,9 @@ namespace GymManagementSystem.Backend
 			}
 		}
 
+		/// <summary>
+		/// Load all the locations inforamtion from DB
+		/// </summary>
 		public void LoadLocationsFromDB()
 		{
 			try
@@ -159,6 +174,9 @@ namespace GymManagementSystem.Backend
 			}
 		}
 
+		/// <summary>
+		/// Automatically retrieve the locaiton ID for adding location
+		/// </summary>
 		public int GetLocationID()
 		{
 			int maxLocationId = 0;
@@ -173,6 +191,9 @@ namespace GymManagementSystem.Backend
 			return maxLocationId;
 		}
 
+		/// <summary>
+		/// Create the new location
+		/// </summary>
 		public Entities.Location AddLocation(int location_id, string street_address, string city, string province, string country, string zip_code)
 		{
 			Entities.Location newLocation = new Entities.Location(location_id, street_address, city, province, country, zip_code);
@@ -182,7 +203,9 @@ namespace GymManagementSystem.Backend
 
 
 
-		// todo
+		/// <summary>
+		/// Search the location information if the province matches the data
+		/// </summary>
 		public string SearchLocations(string search_province)
 		{
 			foreach (Entities.Location location in _locations)
