@@ -1,0 +1,259 @@
+﻿@using Microsoft.Maui.Storage
+@using System.IO
+@using System.Text.Json
+@using GymManagementSystem.Backend;
+@using GymManagementSystem.Backend.Entities;
+
+
+@page "/location"
+
+
+<style>
+    body {
+        margin: auto;
+        font-family: Sans-serif;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+
+    .location-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    select {
+        text-transform: none;
+    }
+
+    .search-style {
+        display: block;
+        width: 100%;
+        height: 34px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+        background-color: white;
+        background-image: none;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+    }
+
+    .search-flex {
+        display: flex;
+    }
+
+    .search-flex-item {
+        flex: 1;
+        padding-left: 10px;
+    }
+
+     .button {
+        background-color: #2d85eb;
+        color: white;
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        border-radius: 4px;
+    }
+
+    .button-pos {
+        text-align: center;
+    }
+
+    .add-button {
+        width: 25%;
+    }
+
+    .find-button {
+        flex: 1;
+        padding-left: 10px;
+        display: block;
+        width: 100%;
+        height: 34px;
+        font-size: 14px;
+        line-height: 1.5;
+        background-color: #2d85eb;
+        background-image: none;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+    }
+
+    .province-style {
+        display: block;
+        width: 600px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+        background-color: white;
+        background-image: none;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        flex: 1;
+        padding-left: 10px;
+    }
+
+</style>
+
+<body>
+<h2>Location Management</h2>
+
+    <div class="location-group">
+        <div class="search-flex">
+            <div class="search-flex-item">
+                <label>Province: </label>
+                <div>
+                    <input type="text" id="province" name="province" placeholder="Any" @bind="searchProvince" class="province-style" />
+                </div>
+            </div>
+
+            <div class="search-flex-item">
+                <label>Search Location</label>
+                <button @onclick="FindLocations" class="button find-button">Find Locations</button>
+            </div>
+        </div>
+    </div>
+
+
+    <h3>Locations</h3>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Location ID</th>
+                    <th>Street Address</th>
+                    <th>City</th>
+                    <th>Province</th>
+                    <th>Country</th>
+                    <th>Zip Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var location in _locations)
+                {
+                    <tr>
+                        <td>@location.LocationID</td>
+                        <td>@location.StreetAddress</td>
+                        <td>@location.City</td>
+                        <td>@location.Province</td>
+                        <td>@location.Country</td>
+                        <td>@location.ZipCode</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <h3>Add Location</h3>
+    <div class="location-group">
+        <div class="search-flex">
+            <div class="search-flex-item">
+            <label>Street Address: </label>
+                <input placeholder="Street Address" @bind="input_street_address" class="search-style" />
+
+            <label>City: </label>
+            <input placeholder="City" @bind="input_city" class="search-style" />
+
+                <label>Province: </label>
+                <input placeholder="Province" @bind="input_province" class="search-style" />
+
+            <label>Country: </label>
+            <input placeholder="Country" @bind="input_country" class="search-style" />
+
+            <label>Zip Code: </label>
+            <input placeholder="Zip Code" @bind="input_zip_code" class="search-style" />
+
+                    </div>
+            </div>
+        </div>
+            <div class="location-group">
+            <div class="button-pos">
+            <input type="submit" @onclick="AddLocations" value="Add Locations" class="button add-button" />
+
+        </div>
+        </div>
+</body>
+
+@code {
+    // find location
+    private string searchProvince { get; set; }
+    private string search_city { get; set; }
+    private string selectedLocation { get; set; }
+    private Location newLocation { get; set; }
+    private List<Backend.Entities.Location> _locations = new List<Backend.Entities.Location>();
+    private LocationManager locationManager = new();
+
+    // display location
+    private int LocationID { get; set; }
+    private string StreetAddress { get; set; }
+    private string City { get; set; }
+    private string Province { get; set; }
+    private string Country { get; set; }
+    private string ZipCode { get; set; }
+
+    // add locaiton
+    private string input_id;
+    private string input_street_address;
+    private string input_city;
+    private string input_province;
+    private string input_country;
+    private string input_zip_code;
+
+    private void FindLocations()
+    {
+        _locations = locationManager.LoadLocationsFromDB(searchProvince);
+        Console.WriteLine($"Searching for: {searchProvince}");
+    }
+
+
+    private void AddLocations()
+    {
+        Backend.Entities.Location newLocation = new Backend.Entities.Location()
+            {
+                City = input_city,
+                Country = input_country,
+                Province = input_province,
+                StreetAddress = input_street_address,
+                ZipCode = input_zip_code
+            };
+        int result = locationManager.SaveLocationsToDB(newLocation);
+        if (result > 0)
+        {
+            Console.WriteLine("Added");
+            input_city = "";
+            input_province = "";
+            input_country = "";
+            input_street_address = "";
+            input_zip_code = "";
+        }
+    }
+}

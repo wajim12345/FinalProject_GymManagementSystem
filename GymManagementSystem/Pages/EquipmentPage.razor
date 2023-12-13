@@ -1,0 +1,217 @@
+﻿@page "/equipment"
+@using GymManagementSystem.Backend;
+@using GymManagementSystem.Backend.Entities;
+
+
+<style>
+
+    /******* layout *******/
+    .search-section {
+        width: 780px;
+    }
+
+    .add-member-section {
+        background-color: #E0E0E0;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 260px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    input, select {
+        margin-bottom: 10px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    /******* button and text *******/
+    button {
+        outline: none;
+        box-shadow: none;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: #1b6ec2;
+        color: white;
+        line-height: 1.8;
+        border-radius: 4px;
+        border: #1b6ec2;
+        font-size: 20px;
+        width: 205px;
+    }
+
+        button:hover {
+            background-color: orange;
+        }
+
+    h1, h3, h5 {
+        font-weight: bold;
+    }
+
+    .find-member-title, thead {
+        background-color: #E0E0E0;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+
+    .mandatory-field, .alertMessage, .searchAlertMessage {
+        color: red;
+    }
+
+    .successful-message {
+        color: green;
+    }
+</style>
+
+
+<h3>Equipment Management</h3>
+<div class="flex">
+    <div class="search-section">
+        <h5 class="find-member-title">Find Equipment</h5>
+        <div class="field">
+            <label class="equipmentID" for="inputID">Equipment ID: </label><br>
+            <input class="inputID" placeholder="Equipment ID" @bind=@inputID /><br>
+            <label class="equipmentName" for="inputName">Equipment Name: </label><br>
+            <input class="inputName" placeholder="Equipment Name" @bind=@inputName /><br>
+        </div>
+        <button class="search-button" @onclick="Search">Search</button>
+        <p class="searchAlertMessage">@searchAlertMessage</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+
+            @* the initial text when user enter the page *@
+            @if (string.IsNullOrEmpty(inputID) && string.IsNullOrEmpty(inputName))
+            {
+                <p>Enter equipment ID or equipment name.</p>
+            }
+            @* when user enter member ID *@
+            else if (!string.IsNullOrEmpty(inputID))
+            {
+                @* check is inputID valid, if valid, check if there is member matching the user input *@
+                if (int.TryParse(inputID, out _))
+                {
+                    if (foundEquipment.Count > 0)
+                    {
+                        <tbody>
+                            @foreach (Equipment equipment in foundEquipment)
+                            {
+                                <tr>
+                                    <td>@equipment.Id</td>
+                                    <td>@equipment.Name</td>
+                                    <td>@equipment.Type</td>
+                                    <td>@equipment.Weight</td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                    else
+                    {
+                        <p>Equipment not found.</p>
+                    }
+                }
+                @* if user input id is not digit *@
+                else
+                {
+                    <p>Invalid equipment ID.</p>
+                }
+            }
+            @* if user only enter member name *@
+            else if (!string.IsNullOrEmpty(inputName) && string.IsNullOrEmpty(inputID))
+            {
+                if (foundEquipment.Count > 0)
+                {
+                    <tbody>
+                        @foreach (Equipment equipment in foundEquipment)
+                        {
+                            <tr>
+                                <td>@equipment.Id</td>
+                                <td>@equipment.Name</td>
+                                <td>@equipment.Type</td>
+                                <td>@equipment.Weight</td>
+
+                            </tr>
+                        }
+                    </tbody>
+                }
+                else
+                {
+                    <p>Equipment not found.</p>
+                }
+            }
+
+        </table>
+    </div>
+
+    <div class="add-member-section">
+        <h5 class="add-member">Add a new piece of equipment</h5>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Equipment Name: </label>
+            <input class="input" placeholder="Equipment Name" @bind="newName" /><br>
+        </div>
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Equipment Type: </label>
+            <input class="input" placeholder="Equipment Type" @bind="newType" /><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Equipment Weight </label>
+            <input class="input" placeholder="Weight" @bind="newWeight" /><br>
+        </div>
+
+        <button @onclick="Add">add</button>
+        <p class="successful-message">@message</p>
+        <p class="alertMessage">@alertMessage</p>
+    </div>
+</div>
+
+
+@code {
+    private string? inputID;
+    private string? inputName;
+    private int Id;
+    private string Name;
+    private string Type;
+    private string Weight;
+    private string newName;
+    private string newType;
+    private string newWeight;
+
+    private EquipmentManager equipmentManager = new();
+    private List<Equipment> foundEquipment = new List<Equipment>();
+
+    private string message;
+    private string alertMessage;
+    private string searchAlertMessage;
+
+    private void Add()
+    {
+        int newEquipmentId = equipmentManager.GetMaxId() + 1;
+        Equipment newEquipment = equipmentManager.AddEquipment(newEquipmentId, newName, newType, newWeight);
+        if (newEquipment != null)
+        {
+            equipmentManager.SaveToDB();
+        }
+    }
+    
+    private void Search()
+    {
+        foundEquipment.Clear();
+        Equipment found = equipmentManager.SearchEquipment(inputID, inputName);
+        if (found != null)
+        {
+            foundEquipment.Add(found);
+        }
+    }
+}

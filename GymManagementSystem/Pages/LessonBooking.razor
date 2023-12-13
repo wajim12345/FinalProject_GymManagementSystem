@@ -1,0 +1,338 @@
+﻿@page "/lessonbooking"
+@using GymManagementSystem.Backend
+@using GymManagementSystem.Backend.Entities
+@using GymManagementSystem.Backend.Exceptions
+@using System.Text.Json
+@using System.IO
+
+<h3>Book Lesson</h3>
+<div class="flex">
+	<div class="searchSection">
+		<h5 class="title">Search Lessons</h5>
+		<div class="section">
+			<div class="input">
+				<label>Lesson</label>
+				<select @bind="lessonCode">
+					<option value="0">Select a Lesson</option>
+					@foreach (Lesson lesson in lessonManager.Lessons)
+					{
+						<option value="@lesson.Code">@lesson.Name</option>
+					}
+				</select>
+			</div>
+			<div>
+				<button class="button" @onclick="FindSchedules">Find Schedule</button>
+			</div>
+		</div>
+		<p class="errorMessage">@searchMessage</p>
+		<div class="displayInfo">
+
+			@if (lessonCode != 0)
+			{
+				<h5 class="title">Lesson Information</h5>
+				<table>
+					<tbody>
+						@foreach (Lesson lesson in lessonManager.Lessons)
+						{
+							if (lesson.Code == lessonCode)
+							{
+								<tr>
+									<td class="head">Code</td>
+									<td class="info">@lesson.Code</td>
+								</tr>
+								<tr>
+									<td class="head">Name</td>
+									<td class="info">@lesson.Name</td>
+								</tr>
+								<tr>
+									<td class="head">Description</td>
+									<td class="info">@lesson.Description</td>
+								</tr>
+							}
+						}
+					</tbody>
+				</table>
+			}
+
+		</div>
+
+		<div class="tableSection">
+			<table class="displayTable">
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Start Time</th>
+						<th>Duration</th>
+						<th>Location</th>
+						<th>Max Capacity</th>
+						<th>Capacity Left</th>
+					</tr>
+				</thead>
+				<tbody>
+					@if (scheduleSearch.Count > 0)
+					{
+						@foreach (Schedule schedule in scheduleSearch)
+						{
+							<tr>
+								<td>
+									<input type="radio" name="selectedSchedule" value="null" @onclick="()=>SelectSchedule(schedule)" />
+								</td>
+								<td>@schedule.Time</td>
+								<td>@schedule.Duration</td>
+								<td>@schedule.Location</td>
+								<td>@schedule.Capacity</td>
+								<td>@bookingManager.AvailableCapacity(schedule)</td>
+							</tr>
+						}
+					}
+					else
+					{
+						<tr>
+							<td></td>
+							<td>No schedule found</td>
+						</tr>
+					}
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="bookingSection">
+		<h5>Booking</h5>
+		<div class="bookingInfo">
+			<label>Lesson Code:</label>
+			<input type="text" placeholder=" " @bind="selectedScheduleCode" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Location:</label>
+			<input type="text" placeholder="" @bind="selectedLocation" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Start Time:</label>
+			<input type="text" placeholder="" @bind="selectedTime" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>End Time:</label>
+			<input type="text" placeholder="" @bind="selectedEndTime" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Lesson Duration:</label>
+			<input type="text" placeholder=" " @bind="selectedDuration" readonly="readonly" />
+		</div>
+		<div class="bookingInfo">
+			<label>Member ID:</label>
+			<input type="text" placeholder="member ID" @bind="memberID" />
+		</div>
+		<div class="bookingInfo">
+			<label>First Name:</label>
+			<input type="text" placeholder="First Name" @bind="memberFirstName" />
+		</div>
+		<div class="bookingInfo">
+			<label>Last Name:</label>
+			<input type="text" placeholder="Last Name" @bind="memberLastName" />
+		</div>
+
+
+		<div>
+			<button class="button" @onclick="ConfirmBooking">Confirm</button>
+		</div>
+		<p class="errorMessage"> @message</p>
+
+	</div>
+</div>
+<style>
+	.searchSection {
+		width: 780px;
+	}
+
+	.bookingSection {
+		background-color: #E0E0E0;
+		margin-left: 20px;
+		padding: 20px;
+		width: 260px;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	input, select {
+		margin-bottom: 10px;
+		border: 1px solid gray;
+		border-radius: 4px;
+		padding: 5px;
+	}
+
+	.title, thead {
+		background-color: #E0E0E0;
+		line-height: 1.5;
+		padding-left: 10px;
+	}
+	.head{
+
+		line-height: 1.5;
+		padding-left: 10px;
+	}
+
+	h1, h3, h5 {
+		font-weight: bold;
+	}
+
+	.errorMessage {
+		color: red;
+		text-align: center;
+	}
+
+	.displayInfo {
+		margin-bottom: 25px;
+	}
+
+	.head {
+		font-weight: bold;
+		width: 125px;
+	}
+
+	.section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.input {
+		margin-right: 50px;
+	}
+
+	.displayTable {
+		width: 100%;
+	}
+
+		.displayTable th,
+		.displayTable td {
+			padding: 8px;
+			text-align: left;
+		}
+
+		.displayTable tbody tr:nth-child(even) {
+			background-color: #daeaf7;
+		}
+
+
+	.button {
+		outline: none;
+		box-shadow: none;
+		margin-top: 5px;
+		margin-bottom: 15px;
+		background-color: #1b6ec2;
+		color: white;
+		line-height: 1.8;
+		border-radius: 4px;
+		border: #1b6ec2;
+		font-size: 20px;
+		width: 205px;
+	}
+
+		.button:hover {
+			background-color: orange;
+		}
+</style>
+
+
+
+
+
+@code {
+	private int lessonCode;
+	private string searchMessage;
+	private List<Schedule> scheduleSearch = new();
+	private LessonManager lessonManager = new LessonManager();
+	private ScheduleManager scheduleManager = new ScheduleManager();
+	private BookingManager bookingManager = new BookingManager();
+	private MemberManager memberManager = new MemberManager();
+	private int selectedScheduleCode;
+	private Schedule selectedSchedule;
+	private int selectedScheduleID;
+	private string selectedTime;
+	private string selectedLocation;
+	private int selectedDuration;
+	private string selectedEndTime;
+	private string memberFirstName;
+	private string memberLastName;
+	private string memberID;
+	private string message;
+
+	public void FindSchedules()
+	{
+		if (lessonCode != 0)
+		{
+			searchMessage = "";
+			scheduleSearch.Clear();
+			foreach (Schedule schedule in scheduleManager.Schedules)
+			{
+				if (schedule.Code == lessonCode)
+				{
+
+					scheduleSearch.Add(schedule);
+				}
+			}
+		}
+		else
+		{
+			scheduleSearch.Clear();
+			searchMessage = "Please Select a Lesson";
+		}
+	}
+
+	private void SelectSchedule(Schedule schedule)
+	{
+		selectedSchedule = schedule;
+		selectedScheduleID = schedule.Id;
+		selectedScheduleCode = schedule.Code;
+		selectedLocation = schedule.Location;
+		selectedDuration = schedule.Duration;
+		selectedTime = schedule.Time;
+		selectedEndTime = schedule.EndTime();
+	}
+
+	public void ConfirmBooking()
+	{
+
+		if (!string.IsNullOrEmpty(memberFirstName) && !string.IsNullOrEmpty(memberLastName) && !string.IsNullOrEmpty(memberID))
+		{
+			if (selectedSchedule == null)
+			{
+				message = "Please select a schedule";
+			}
+			else
+			{
+				if (bookingManager.AvailableCapacity(selectedSchedule) > 0)
+				{
+					foreach (Member member in memberManager.Members)
+					{
+						if (member.Id == int.Parse(memberID) && member.FirstName == memberFirstName && member.LastName == member.LastName)
+						{
+							bookingManager.BookLesson(selectedScheduleID, memberID);
+							message = "Successfully Booked!";
+							bookingManager.SaveToDatabase();
+							break;
+						}
+						else
+						{
+							message = "Invalid Member Information";
+						}
+					}
+				}
+				else
+				{
+					message = "Lesson is full";
+				}
+			}
+
+		}
+		else
+		{
+			message = "Please fill the fields before confirming.";
+		}
+
+
+	}
+}
