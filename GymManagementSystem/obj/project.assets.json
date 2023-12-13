@@ -36978,24 +36978,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\onlyfish\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jimwa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
+      "projectUniqueName": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
       "projectName": "GymManagementSystem",
-      "projectPath": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\onlyfish\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\onlyfish\\Source\\Repos\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\",
+      "projectPath": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\GymManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\jimwa\\.nuget\\packages\\",
+      "outputPath": "G:\\OOP2\\FinalProject_GymManagementSystem\\GymManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\onlyfish\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jimwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -37092,15 +37092,15 @@
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           },
           {
             "name": "Microsoft.Maui.Controls.Ref.android",
@@ -37144,7 +37144,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       },
       "net6.0-ios16.1": {
         "targetAlias": "net6.0-ios",
@@ -37236,7 +37236,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       },
       "net6.0-maccatalyst16.1": {
         "targetAlias": "net6.0-maccatalyst",
@@ -37329,7 +37329,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       },
       "net6.0-windows10.0.19041": {
         "targetAlias": "net6.0-windows10.0.19041.0",
@@ -37368,7 +37368,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           },
           {
             "name": "Microsoft.Maui.Controls.Ref.win",
@@ -37396,7 +37396,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -37404,7 +37404,7 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.22, 6.0.22]"
+            "version": "[6.0.24, 6.0.24]"
           }
         ],
         "frameworkReferences": {
@@ -37424,7 +37424,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
