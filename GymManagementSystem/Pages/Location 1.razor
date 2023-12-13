@@ -1,0 +1,199 @@
+﻿@using Microsoft.Maui.Storage
+@using System.IO
+@using System.Text.Json
+@using GymManagementSystem.Backend
+@using GymManagementSystem.Backend.Entities
+
+
+@page "/location"
+
+
+<style>
+
+    /******* layout *******/
+    .search-section {
+        width: 780px;
+    }
+
+    .add-location-section {
+        background-color: #E0E0E0;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 260px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    input, select {
+        margin-bottom: 10px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    /******* button and text *******/
+    button {
+        outline: none;
+        box-shadow: none;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color: #1b6ec2;
+        color: white;
+        line-height: 1.8;
+        border-radius: 4px;
+        border: #1b6ec2;
+        font-size: 20px;
+        width: 205px;
+    }
+
+        button:hover {
+            background-color: orange;
+        }
+
+    h1, h3, h5 {
+        font-weight: bold;
+    }
+
+    .find-location-title, thead {
+        background-color: #E0E0E0;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+
+    .mandatory-field, .alertMessage, .searchAlertMessage {
+        color: red;
+    }
+
+    .successful-message {
+        color: green;
+    }
+</style>
+
+<body>
+<h2>Location Management</h2>
+
+ <div class="flex">
+    <div class="search-section">
+        <h5 class="find-location-title">Find Location</h5>
+        <div class="field">
+                <input class="inputID" placeholder="Province" @bind=@searchProvince /><br>
+
+        </div>
+        <button class="search-button" @onclick="FindLocations">Search</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Location ID</th>
+                    <th>Street Address</th>
+                    <th>City</th>
+                    <th>Province</th>
+                    <th>Country</th>
+                    <th>Zip Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var location in _locations)
+                {
+                    <tr>
+                        <td>@location.LocationID</td>
+                        <td>@location.StreetAddress</td>
+                        <td>@location.City</td>
+                        <td>@location.Province</td>
+                        <td>@location.Country</td>
+                        <td>@location.ZipCode</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <div class="add-location-section">
+        <h5 class="add-location">Add a new location</h5>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Street Address: </label>
+                    <input class="input" placeholder="Street Address" @bind="input_street_address" /><br>
+        </div>
+        <div class="field">
+            <label><span class="mandatory-field">*</span>City: </label>
+                    <input class="input" placeholder="City" @bind="input_city" /><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Province: </label>
+                    <input class="input" placeholder="Province" @bind="input_province" /><br>
+        </div>
+
+        <div class="field">
+            <label><span class="mandatory-field">*</span>Country: </label>
+                    <input class="input" placeholder="Country" @bind="input_country" /><br>
+        </div>
+        <div class="field">
+                    <label><span class="mandatory-field">*</span>Zip Code: </label>
+                    <input class="input" placeholder="Zip Code" @bind="input_zip_code" /><br>
+        </div>
+            <button @onclick="AddLocations">Add</button>
+        </div>
+        </div>
+</body>
+
+@code {
+    // find location
+    private string searchProvince { get; set; }
+    private string search_city { get; set; }
+    private string selectedLocation { get; set; }
+    private Location newLocation { get; set; }
+    private List<Location> _locations = new List<Location>();
+    private LocationManager locationManager = new();
+
+    // display location
+    private int LocationID { get; set; }
+    private string StreetAddress { get; set; }
+    private string City { get; set; }
+    private string Province { get; set; }
+    private string Country { get; set; }
+    private string ZipCode { get; set; }
+
+    // add locaiton
+    private string input_id;
+    private string input_street_address;
+    private string input_city;
+    private string input_province;
+    private string input_country;
+    private string input_zip_code;
+
+    private void FindLocations()
+    {
+        _locations = locationManager.LoadLocationsFromDB(searchProvince);
+        Console.WriteLine($"Searching for: {searchProvince}");
+    }
+
+
+    private void AddLocations()
+    {
+        Location newLocation = new Location()
+            {
+                City = input_city,
+                Country = input_country,
+                Province = input_province,
+                StreetAddress = input_street_address,
+                ZipCode = input_zip_code
+            };
+        int result = locationManager.SaveLocationsToDB(newLocation);
+        if (result > 0)
+        {
+            Console.WriteLine("Added");
+            input_city = "";
+            input_province = "";
+            input_country = "";
+            input_street_address = "";
+            input_zip_code = "";
+        }
+    }
+}
