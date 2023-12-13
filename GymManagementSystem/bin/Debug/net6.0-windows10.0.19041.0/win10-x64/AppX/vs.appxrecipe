@@ -29,7 +29,7 @@
     <AppXManifest Include="G:\OOP2\FinalProject_GymManagementSystem\GymManagementSystem\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-13T04:10:26.603</Modified>
+      <Modified>2023-12-13T04:18:38.538</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
