@@ -17,6 +17,7 @@ namespace GymManagementSystem.Backend
 	/// <remarks>Date: Dec 12, 2023</remarks>
 	internal class EquipmentManager
     {
+        // Fields/Properties
         List<Equipment> _equipmentList = new List<Equipment>();
         const string EQUIPMENT_FILE = "Data/equipment.csv";
         const string EQUIPMENT_JSON = "equipment.json";
@@ -30,24 +31,9 @@ namespace GymManagementSystem.Backend
             LoadEquipmentFromDB();
         }
 
-        public void LoadEquipment()
-        {
-            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, EQUIPMENT_FILE);
-            string[] lines = File.ReadAllLines(filePath);
-
-            foreach (string line in lines)
-            {
-                string[] column = line.Split(',');
-
-                int id = int.Parse(column[0]);
-                string name = column[1];
-                string type = column[2];
-                string weight = column[3];
-
-                Equipment equipment = new(id, name, type, weight);
-            }
-        }
-
+        /// <summary>
+        /// Populates _equipmentList from gymdata database
+        /// </summary>
         public void LoadEquipmentFromDB()
         {
             MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
@@ -75,6 +61,15 @@ namespace GymManagementSystem.Backend
             connection.Close();
         }
 
+        /// <summary>
+        /// Adds equipment to _equipmentList. Error handling occurs when user enters invalid options
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="type"></param>
+        /// <param name="weight"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidAddingException"></exception>
         public Equipment AddEquipment(int id, string name, string type, string weight)
         {
 
@@ -83,7 +78,7 @@ namespace GymManagementSystem.Backend
             else if (string.IsNullOrWhiteSpace(type))
                 throw new InvalidAddingException("Type cannot be empty.");
             else if (string.IsNullOrWhiteSpace(weight))
-                throw new InvalidAddingException("Weight cannot be empty. Enter 'N/A' if the type is machine.");
+                throw new InvalidAddingException("Weight cannot be empty. Enter the max weight capacity if the type is machine.");
             else
             {
                 newEquipment = new(id, name, type, weight);
@@ -92,6 +87,13 @@ namespace GymManagementSystem.Backend
             }
         }
 
+        /// <summary>
+        /// Searches for equipment in the _equipmentList list. Matches ID or name of equipment to searched ID/name
+        /// </summary>
+        /// <param name="inputID"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidSearchingExecption"></exception>
         public Equipment SearchEquipment(string inputID, string name)
         {
             foreach (Equipment equipment in _equipmentList)
@@ -129,6 +131,11 @@ namespace GymManagementSystem.Backend
             }
             return null;
         }
+
+        /// <summary>
+        /// Method used for finding the highest number ID. Useful for adding items to list
+        /// </summary>
+        /// <returns></returns>
         public int GetMaxId()
         {
             foreach (Equipment equipment in _equipmentList)
@@ -141,13 +148,9 @@ namespace GymManagementSystem.Backend
             return maxId;
         }
 
-        public void SaveEquipment()
-        {
-            string equipment = JsonSerializer.Serialize(_equipmentList);
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, EQUIPMENT_JSON);
-            File.WriteAllText(path, equipment);
-        }
-
+        /// <summary>
+        /// Inserts row into gym database
+        /// </summary>
         public void SaveToDB()
         {
             MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder
